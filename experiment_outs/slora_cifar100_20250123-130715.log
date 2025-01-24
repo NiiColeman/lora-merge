@@ -1,0 +1,83 @@
+2025-01-23 13:07:15,590 [INFO] Starting S-LoRA CIFAR-100 experiment
+2025-01-23 13:07:16,656 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg2_in21k_ft_in1k)
+2025-01-23 13:07:19,753 [INFO] [timm/vit_base_patch16_224.augreg2_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-01-23 13:07:22,513 [INFO] 
+Starting task 0
+2025-01-23 13:07:37,887 [INFO] Task 0, Epoch 0: Loss = 0.6661
+2025-01-23 13:07:50,870 [INFO] Task 0, Epoch 1: Loss = 0.0411
+2025-01-23 13:08:03,742 [INFO] Task 0, Epoch 2: Loss = 0.0095
+2025-01-23 13:08:16,720 [INFO] Task 0, Epoch 3: Loss = 0.0269
+2025-01-23 13:08:29,779 [INFO] Task 0, Epoch 4: Loss = 0.0257
+2025-01-23 13:08:42,752 [INFO] Task 0, Epoch 5: Loss = 0.0399
+2025-01-23 13:08:55,667 [INFO] Task 0, Epoch 6: Loss = 0.0823
+2025-01-23 13:09:08,643 [INFO] Task 0, Epoch 7: Loss = 0.1188
+2025-01-23 13:09:21,518 [INFO] Task 0, Epoch 8: Loss = 0.0829
+2025-01-23 13:09:34,405 [INFO] Task 0, Epoch 9: Loss = 0.0832
+2025-01-23 13:09:34,406 [INFO] Task 0 completed. Average loss: 0.1177
+2025-01-23 13:09:41,525 [INFO] Task 0 evaluation on task 0: 5.00%
+2025-01-23 13:09:41,525 [INFO] 
+Starting task 1
+2025-01-23 13:09:48,895 [INFO] Task 1, Epoch 0: Loss = 0.8703
+2025-01-23 13:09:56,270 [INFO] Task 1, Epoch 1: Loss = 0.1002
+2025-01-23 13:10:03,648 [INFO] Task 1, Epoch 2: Loss = 0.0538
+2025-01-23 13:10:11,076 [INFO] Task 1, Epoch 3: Loss = 0.0376
+2025-01-23 13:10:18,509 [INFO] Task 1, Epoch 4: Loss = 0.0235
+2025-01-23 13:10:25,928 [INFO] Task 1, Epoch 5: Loss = 0.0180
+2025-01-23 13:10:33,362 [INFO] Task 1, Epoch 6: Loss = 0.0137
+2025-01-23 13:10:40,693 [INFO] Task 1, Epoch 7: Loss = 0.0112
+2025-01-23 13:10:47,931 [INFO] Task 1, Epoch 8: Loss = 0.0095
+2025-01-23 13:10:55,164 [INFO] Task 1, Epoch 9: Loss = 0.0086
+2025-01-23 13:10:55,164 [INFO] Task 1 completed. Average loss: 0.1146
+2025-01-23 13:11:02,122 [INFO] Task 1 evaluation on task 0: 5.00%
+2025-01-23 13:11:09,075 [INFO] Task 1 evaluation on task 1: 5.00%
+2025-01-23 13:11:09,075 [INFO] 
+Starting task 2
+2025-01-23 13:11:16,315 [INFO] Task 2, Epoch 0: Loss = 0.8866
+2025-01-23 13:11:23,565 [INFO] Task 2, Epoch 1: Loss = 0.1452
+2025-01-23 13:11:30,802 [INFO] Task 2, Epoch 2: Loss = 0.0878
+2025-01-23 13:11:38,041 [INFO] Task 2, Epoch 3: Loss = 0.0638
+2025-01-23 13:11:45,280 [INFO] Task 2, Epoch 4: Loss = 0.0426
+2025-01-23 13:11:52,514 [INFO] Task 2, Epoch 5: Loss = 0.0324
+2025-01-23 13:11:59,751 [INFO] Task 2, Epoch 6: Loss = 0.0266
+2025-01-23 13:12:06,980 [INFO] Task 2, Epoch 7: Loss = 0.0219
+2025-01-23 13:12:14,207 [INFO] Task 2, Epoch 8: Loss = 0.0174
+2025-01-23 13:12:21,437 [INFO] Task 2, Epoch 9: Loss = 0.0134
+2025-01-23 13:12:21,437 [INFO] Task 2 completed. Average loss: 0.1338
+2025-01-23 13:12:28,368 [INFO] Task 2 evaluation on task 0: 5.00%
+2025-01-23 13:12:35,329 [INFO] Task 2 evaluation on task 1: 5.00%
+2025-01-23 13:12:42,284 [INFO] Task 2 evaluation on task 2: 0.00%
+2025-01-23 13:12:42,285 [INFO] 
+Starting task 3
+2025-01-23 13:12:49,530 [INFO] Task 3, Epoch 0: Loss = 0.9886
+2025-01-23 13:12:56,765 [INFO] Task 3, Epoch 1: Loss = 0.1670
+2025-01-23 13:13:03,981 [INFO] Task 3, Epoch 2: Loss = 0.0973
+2025-01-23 13:13:11,210 [INFO] Task 3, Epoch 3: Loss = 0.0637
+2025-01-23 13:13:18,431 [INFO] Task 3, Epoch 4: Loss = 0.0425
+2025-01-23 13:13:25,656 [INFO] Task 3, Epoch 5: Loss = 0.0306
+2025-01-23 13:13:32,879 [INFO] Task 3, Epoch 6: Loss = 0.0238
+2025-01-23 13:13:40,098 [INFO] Task 3, Epoch 7: Loss = 0.0209
+2025-01-23 13:13:47,316 [INFO] Task 3, Epoch 8: Loss = 0.0168
+2025-01-23 13:13:54,539 [INFO] Task 3, Epoch 9: Loss = 0.0131
+2025-01-23 13:13:54,540 [INFO] Task 3 completed. Average loss: 0.1464
+2025-01-23 13:14:01,491 [INFO] Task 3 evaluation on task 0: 5.00%
+2025-01-23 13:14:08,420 [INFO] Task 3 evaluation on task 1: 5.00%
+2025-01-23 13:14:15,350 [INFO] Task 3 evaluation on task 2: 0.00%
+2025-01-23 13:14:22,281 [INFO] Task 3 evaluation on task 3: 0.00%
+2025-01-23 13:14:22,281 [INFO] 
+Starting task 4
+2025-01-23 13:14:29,520 [INFO] Task 4, Epoch 0: Loss = 0.7289
+2025-01-23 13:14:36,746 [INFO] Task 4, Epoch 1: Loss = 0.0787
+2025-01-23 13:14:43,971 [INFO] Task 4, Epoch 2: Loss = 0.0350
+2025-01-23 13:14:51,202 [INFO] Task 4, Epoch 3: Loss = 0.0212
+2025-01-23 13:14:58,425 [INFO] Task 4, Epoch 4: Loss = 0.0148
+2025-01-23 13:15:05,668 [INFO] Task 4, Epoch 5: Loss = 0.0109
+2025-01-23 13:15:12,889 [INFO] Task 4, Epoch 6: Loss = 0.0078
+2025-01-23 13:15:20,108 [INFO] Task 4, Epoch 7: Loss = 0.0067
+2025-01-23 13:15:27,328 [INFO] Task 4, Epoch 8: Loss = 0.0056
+2025-01-23 13:15:34,547 [INFO] Task 4, Epoch 9: Loss = 0.0045
+2025-01-23 13:15:34,548 [INFO] Task 4 completed. Average loss: 0.0914
+2025-01-23 13:15:41,470 [INFO] Task 4 evaluation on task 0: 5.00%
+2025-01-23 13:15:48,390 [INFO] Task 4 evaluation on task 1: 5.00%
+2025-01-23 13:15:55,308 [INFO] Task 4 evaluation on task 2: 0.00%
+2025-01-23 13:16:02,229 [INFO] Task 4 evaluation on task 3: 0.00%
+2025-01-23 13:16:09,151 [INFO] Task 4 evaluation on task 4: 0.00%

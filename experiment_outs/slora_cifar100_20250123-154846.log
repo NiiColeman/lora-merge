@@ -1,0 +1,31 @@
+2025-01-23 15:48:46,007 [INFO] 
+    Summary of S-DoRA CIFAR-100 Benchmark
+
+    1. Benchmark Setup:
+    - Split CIFAR100 into 10 tasks using Avalanche
+    - Each task has 10 classes with class-incremental setup
+
+    2. SLoRA Class Structure:
+    - Manages LoRA directions, alphas, and Incremental classifier + mask
+    - ParameterList for alphas allows independent learning per task
+
+    3. Training Strategy:
+    - Task 0: Train LoRA direction (AB matrices) and alpha
+    - Tasks 1-9: Freeze LoRA direction, only train new alpha and classifier
+    - Uses masks to focus on current task classes
+
+    4. Evaluation:
+    - Tests each trained task on all previous tasks
+    - Tracks accuracy using incrementally trained classifier with mask
+    - Maintains running evaluation metrics
+
+    5. Logging:
+    - Timestamped files for experiment tracking
+    - Records loss, accuracy, and key events
+    - Uses tqdm for progress visualization
+
+   
+    
+2025-01-23 15:48:46,007 [INFO] Starting S-LoRA CIFAR-100 experiment
+2025-01-23 15:48:47,022 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg2_in21k_ft_in1k)
+2025-01-23 15:48:47,038 [INFO] [timm/vit_base_patch16_224.augreg2_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.

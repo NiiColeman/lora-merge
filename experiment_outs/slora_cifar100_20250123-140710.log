@@ -1,0 +1,243 @@
+2025-01-23 14:07:10,466 [INFO] Starting S-LoRA CIFAR-100 experiment
+2025-01-23 14:07:11,501 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg2_in21k_ft_in1k)
+2025-01-23 14:07:14,642 [INFO] [timm/vit_base_patch16_224.augreg2_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-01-23 14:07:17,858 [INFO] 
+Starting task 0
+2025-01-23 14:07:29,197 [INFO] Task 0, Epoch 0: Loss = 0.7009, Acc = 85.40%
+2025-01-23 14:07:35,435 [INFO] Task 0, Epoch 1: Loss = 0.0579, Acc = 98.20%
+2025-01-23 14:07:41,681 [INFO] Task 0, Epoch 2: Loss = 0.0204, Acc = 99.20%
+2025-01-23 14:07:47,781 [INFO] Task 0, Epoch 3: Loss = 0.0030, Acc = 100.00%
+2025-01-23 14:07:53,970 [INFO] Task 0, Epoch 4: Loss = 0.0070, Acc = 99.80%
+2025-01-23 14:08:00,194 [INFO] Task 0, Epoch 5: Loss = 0.0039, Acc = 99.80%
+2025-01-23 14:08:06,320 [INFO] Task 0, Epoch 6: Loss = 0.0005, Acc = 100.00%
+2025-01-23 14:08:12,532 [INFO] Task 0, Epoch 7: Loss = 0.0002, Acc = 100.00%
+2025-01-23 14:08:18,712 [INFO] Task 0, Epoch 8: Loss = 0.0001, Acc = 100.00%
+2025-01-23 14:08:24,882 [INFO] Task 0, Epoch 9: Loss = 0.0001, Acc = 100.00%
+2025-01-23 14:08:24,883 [INFO] Task 0 completed. Average loss: 0.0001
+2025-01-23 14:08:28,258 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:08:28,258 [INFO] Task 0 evaluation on task 0: 100.00%
+2025-01-23 14:08:28,259 [INFO] 
+Starting task 1
+2025-01-23 14:08:31,786 [INFO] Task 1, Epoch 0: Loss = 0.8598, Acc = 78.80%
+2025-01-23 14:08:35,196 [INFO] Task 1, Epoch 1: Loss = 0.1046, Acc = 96.90%
+2025-01-23 14:08:38,587 [INFO] Task 1, Epoch 2: Loss = 0.0521, Acc = 98.70%
+2025-01-23 14:08:41,977 [INFO] Task 1, Epoch 3: Loss = 0.0316, Acc = 99.30%
+2025-01-23 14:08:45,400 [INFO] Task 1, Epoch 4: Loss = 0.0253, Acc = 99.70%
+2025-01-23 14:08:48,837 [INFO] Task 1, Epoch 5: Loss = 0.0128, Acc = 100.00%
+2025-01-23 14:08:52,300 [INFO] Task 1, Epoch 6: Loss = 0.0113, Acc = 100.00%
+2025-01-23 14:08:55,693 [INFO] Task 1, Epoch 7: Loss = 0.0089, Acc = 100.00%
+2025-01-23 14:08:59,104 [INFO] Task 1, Epoch 8: Loss = 0.0077, Acc = 100.00%
+2025-01-23 14:09:02,511 [INFO] Task 1, Epoch 9: Loss = 0.0068, Acc = 100.00%
+2025-01-23 14:09:02,512 [INFO] Task 1 completed. Average loss: 0.0068
+2025-01-23 14:09:05,858 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:09:05,858 [INFO] Task 1 evaluation on task 0: 100.00%
+2025-01-23 14:09:09,228 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:09:09,228 [INFO] Task 1 evaluation on task 1: 100.00%
+2025-01-23 14:09:09,228 [INFO] 
+Starting task 2
+2025-01-23 14:09:12,620 [INFO] Task 2, Epoch 0: Loss = 0.8929, Acc = 81.40%
+2025-01-23 14:09:16,007 [INFO] Task 2, Epoch 1: Loss = 0.0443, Acc = 98.50%
+2025-01-23 14:09:19,395 [INFO] Task 2, Epoch 2: Loss = 0.0225, Acc = 99.60%
+2025-01-23 14:09:22,810 [INFO] Task 2, Epoch 3: Loss = 0.0125, Acc = 100.00%
+2025-01-23 14:09:26,290 [INFO] Task 2, Epoch 4: Loss = 0.0086, Acc = 100.00%
+2025-01-23 14:09:29,713 [INFO] Task 2, Epoch 5: Loss = 0.0063, Acc = 100.00%
+2025-01-23 14:09:33,102 [INFO] Task 2, Epoch 6: Loss = 0.0054, Acc = 100.00%
+2025-01-23 14:09:36,489 [INFO] Task 2, Epoch 7: Loss = 0.0048, Acc = 100.00%
+2025-01-23 14:09:39,907 [INFO] Task 2, Epoch 8: Loss = 0.0040, Acc = 100.00%
+2025-01-23 14:09:43,351 [INFO] Task 2, Epoch 9: Loss = 0.0031, Acc = 100.00%
+2025-01-23 14:09:43,352 [INFO] Task 2 completed. Average loss: 0.0031
+2025-01-23 14:09:46,708 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:09:46,708 [INFO] Task 2 evaluation on task 0: 100.00%
+2025-01-23 14:09:49,992 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:09:49,992 [INFO] Task 2 evaluation on task 1: 100.00%
+2025-01-23 14:09:53,289 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:09:53,290 [INFO] Task 2 evaluation on task 2: 100.00%
+2025-01-23 14:09:53,290 [INFO] 
+Starting task 3
+2025-01-23 14:09:56,707 [INFO] Task 3, Epoch 0: Loss = 0.8540, Acc = 81.20%
+2025-01-23 14:10:00,162 [INFO] Task 3, Epoch 1: Loss = 0.0452, Acc = 98.80%
+2025-01-23 14:10:03,629 [INFO] Task 3, Epoch 2: Loss = 0.0237, Acc = 99.30%
+2025-01-23 14:10:07,029 [INFO] Task 3, Epoch 3: Loss = 0.0124, Acc = 99.70%
+2025-01-23 14:10:10,418 [INFO] Task 3, Epoch 4: Loss = 0.0074, Acc = 100.00%
+2025-01-23 14:10:13,800 [INFO] Task 3, Epoch 5: Loss = 0.0061, Acc = 100.00%
+2025-01-23 14:10:17,236 [INFO] Task 3, Epoch 6: Loss = 0.0051, Acc = 100.00%
+2025-01-23 14:10:20,707 [INFO] Task 3, Epoch 7: Loss = 0.0051, Acc = 99.90%
+2025-01-23 14:10:24,091 [INFO] Task 3, Epoch 8: Loss = 0.0036, Acc = 100.00%
+2025-01-23 14:10:27,470 [INFO] Task 3, Epoch 9: Loss = 0.0034, Acc = 100.00%
+2025-01-23 14:10:27,471 [INFO] Task 3 completed. Average loss: 0.0034
+2025-01-23 14:10:30,740 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:10:30,740 [INFO] Task 3 evaluation on task 0: 100.00%
+2025-01-23 14:10:34,040 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:10:34,040 [INFO] Task 3 evaluation on task 1: 100.00%
+2025-01-23 14:10:37,389 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:10:37,390 [INFO] Task 3 evaluation on task 2: 100.00%
+2025-01-23 14:10:40,693 [INFO] Task 3 Accuracy: 100.00%
+2025-01-23 14:10:40,693 [INFO] Task 3 evaluation on task 3: 100.00%
+2025-01-23 14:10:40,693 [INFO] 
+Starting task 4
+2025-01-23 14:10:44,076 [INFO] Task 4, Epoch 0: Loss = 0.7237, Acc = 83.70%
+2025-01-23 14:10:47,452 [INFO] Task 4, Epoch 1: Loss = 0.0437, Acc = 99.00%
+2025-01-23 14:10:50,831 [INFO] Task 4, Epoch 2: Loss = 0.0197, Acc = 99.50%
+2025-01-23 14:10:54,267 [INFO] Task 4, Epoch 3: Loss = 0.0146, Acc = 99.80%
+2025-01-23 14:10:57,738 [INFO] Task 4, Epoch 4: Loss = 0.0083, Acc = 100.00%
+2025-01-23 14:11:01,119 [INFO] Task 4, Epoch 5: Loss = 0.0068, Acc = 100.00%
+2025-01-23 14:11:04,501 [INFO] Task 4, Epoch 6: Loss = 0.0060, Acc = 100.00%
+2025-01-23 14:11:07,879 [INFO] Task 4, Epoch 7: Loss = 0.0045, Acc = 100.00%
+2025-01-23 14:11:11,300 [INFO] Task 4, Epoch 8: Loss = 0.0037, Acc = 100.00%
+2025-01-23 14:11:14,785 [INFO] Task 4, Epoch 9: Loss = 0.0033, Acc = 100.00%
+2025-01-23 14:11:14,786 [INFO] Task 4 completed. Average loss: 0.0033
+2025-01-23 14:11:18,059 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:11:18,060 [INFO] Task 4 evaluation on task 0: 100.00%
+2025-01-23 14:11:21,330 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:11:21,330 [INFO] Task 4 evaluation on task 1: 100.00%
+2025-01-23 14:11:24,600 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:11:24,600 [INFO] Task 4 evaluation on task 2: 100.00%
+2025-01-23 14:11:27,889 [INFO] Task 3 Accuracy: 100.00%
+2025-01-23 14:11:27,889 [INFO] Task 4 evaluation on task 3: 100.00%
+2025-01-23 14:11:31,221 [INFO] Task 4 Accuracy: 100.00%
+2025-01-23 14:11:31,221 [INFO] Task 4 evaluation on task 4: 100.00%
+2025-01-23 14:11:31,221 [INFO] 
+Starting task 5
+2025-01-23 14:11:34,694 [INFO] Task 5, Epoch 0: Loss = 0.8820, Acc = 80.10%
+2025-01-23 14:11:38,075 [INFO] Task 5, Epoch 1: Loss = 0.1075, Acc = 96.90%
+2025-01-23 14:11:41,472 [INFO] Task 5, Epoch 2: Loss = 0.0588, Acc = 98.40%
+2025-01-23 14:11:44,855 [INFO] Task 5, Epoch 3: Loss = 0.0397, Acc = 99.10%
+2025-01-23 14:11:48,294 [INFO] Task 5, Epoch 4: Loss = 0.0265, Acc = 99.50%
+2025-01-23 14:11:51,722 [INFO] Task 5, Epoch 5: Loss = 0.0164, Acc = 100.00%
+2025-01-23 14:11:55,111 [INFO] Task 5, Epoch 6: Loss = 0.0132, Acc = 99.90%
+2025-01-23 14:11:58,504 [INFO] Task 5, Epoch 7: Loss = 0.0106, Acc = 100.00%
+2025-01-23 14:12:01,903 [INFO] Task 5, Epoch 8: Loss = 0.0092, Acc = 100.00%
+2025-01-23 14:12:05,333 [INFO] Task 5, Epoch 9: Loss = 0.0081, Acc = 100.00%
+2025-01-23 14:12:05,334 [INFO] Task 5 completed. Average loss: 0.0081
+2025-01-23 14:12:08,604 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:12:08,604 [INFO] Task 5 evaluation on task 0: 100.00%
+2025-01-23 14:12:11,863 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:12:11,863 [INFO] Task 5 evaluation on task 1: 100.00%
+2025-01-23 14:12:15,121 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:12:15,121 [INFO] Task 5 evaluation on task 2: 100.00%
+2025-01-23 14:12:18,379 [INFO] Task 3 Accuracy: 100.00%
+2025-01-23 14:12:18,379 [INFO] Task 5 evaluation on task 3: 100.00%
+2025-01-23 14:12:21,640 [INFO] Task 4 Accuracy: 100.00%
+2025-01-23 14:12:21,640 [INFO] Task 5 evaluation on task 4: 100.00%
+2025-01-23 14:12:24,902 [INFO] Task 5 Accuracy: 100.00%
+2025-01-23 14:12:24,902 [INFO] Task 5 evaluation on task 5: 100.00%
+2025-01-23 14:12:24,902 [INFO] 
+Starting task 6
+2025-01-23 14:12:28,273 [INFO] Task 6, Epoch 0: Loss = 1.0112, Acc = 75.50%
+2025-01-23 14:12:31,651 [INFO] Task 6, Epoch 1: Loss = 0.0721, Acc = 97.80%
+2025-01-23 14:12:35,015 [INFO] Task 6, Epoch 2: Loss = 0.0349, Acc = 99.50%
+2025-01-23 14:12:38,384 [INFO] Task 6, Epoch 3: Loss = 0.0230, Acc = 99.70%
+2025-01-23 14:12:41,751 [INFO] Task 6, Epoch 4: Loss = 0.0151, Acc = 99.90%
+2025-01-23 14:12:45,123 [INFO] Task 6, Epoch 5: Loss = 0.0091, Acc = 100.00%
+2025-01-23 14:12:48,491 [INFO] Task 6, Epoch 6: Loss = 0.0068, Acc = 100.00%
+2025-01-23 14:12:51,859 [INFO] Task 6, Epoch 7: Loss = 0.0057, Acc = 100.00%
+2025-01-23 14:12:55,231 [INFO] Task 6, Epoch 8: Loss = 0.0051, Acc = 100.00%
+2025-01-23 14:12:58,617 [INFO] Task 6, Epoch 9: Loss = 0.0044, Acc = 100.00%
+2025-01-23 14:12:58,617 [INFO] Task 6 completed. Average loss: 0.0044
+2025-01-23 14:13:01,892 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:13:01,892 [INFO] Task 6 evaluation on task 0: 100.00%
+2025-01-23 14:13:05,165 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:13:05,165 [INFO] Task 6 evaluation on task 1: 100.00%
+2025-01-23 14:13:08,438 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:13:08,438 [INFO] Task 6 evaluation on task 2: 100.00%
+2025-01-23 14:13:11,713 [INFO] Task 3 Accuracy: 100.00%
+2025-01-23 14:13:11,713 [INFO] Task 6 evaluation on task 3: 100.00%
+2025-01-23 14:13:14,981 [INFO] Task 4 Accuracy: 100.00%
+2025-01-23 14:13:14,981 [INFO] Task 6 evaluation on task 4: 100.00%
+2025-01-23 14:13:18,242 [INFO] Task 5 Accuracy: 100.00%
+2025-01-23 14:13:18,242 [INFO] Task 6 evaluation on task 5: 100.00%
+2025-01-23 14:13:21,508 [INFO] Task 6 Accuracy: 100.00%
+2025-01-23 14:13:21,508 [INFO] Task 6 evaluation on task 6: 100.00%
+2025-01-23 14:13:21,508 [INFO] 
+Starting task 7
+2025-01-23 14:13:24,891 [INFO] Task 7, Epoch 0: Loss = 1.0162, Acc = 76.80%
+2025-01-23 14:13:28,274 [INFO] Task 7, Epoch 1: Loss = 0.0889, Acc = 96.80%
+2025-01-23 14:13:31,659 [INFO] Task 7, Epoch 2: Loss = 0.0499, Acc = 98.80%
+2025-01-23 14:13:35,043 [INFO] Task 7, Epoch 3: Loss = 0.0297, Acc = 99.60%
+2025-01-23 14:13:38,424 [INFO] Task 7, Epoch 4: Loss = 0.0208, Acc = 99.70%
+2025-01-23 14:13:41,804 [INFO] Task 7, Epoch 5: Loss = 0.0147, Acc = 99.90%
+2025-01-23 14:13:45,193 [INFO] Task 7, Epoch 6: Loss = 0.0109, Acc = 100.00%
+2025-01-23 14:13:48,580 [INFO] Task 7, Epoch 7: Loss = 0.0088, Acc = 100.00%
+2025-01-23 14:13:51,973 [INFO] Task 7, Epoch 8: Loss = 0.0081, Acc = 100.00%
+2025-01-23 14:13:55,357 [INFO] Task 7, Epoch 9: Loss = 0.0066, Acc = 100.00%
+2025-01-23 14:13:55,358 [INFO] Task 7 completed. Average loss: 0.0066
+2025-01-23 14:13:58,634 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:13:58,634 [INFO] Task 7 evaluation on task 0: 100.00%
+2025-01-23 14:14:02,048 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:14:02,048 [INFO] Task 7 evaluation on task 1: 100.00%
+2025-01-23 14:14:05,471 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:14:05,472 [INFO] Task 7 evaluation on task 2: 100.00%
+2025-01-23 14:14:08,774 [INFO] Task 3 Accuracy: 100.00%
+2025-01-23 14:14:08,774 [INFO] Task 7 evaluation on task 3: 100.00%
+2025-01-23 14:14:12,061 [INFO] Task 4 Accuracy: 100.00%
+2025-01-23 14:14:12,061 [INFO] Task 7 evaluation on task 4: 100.00%
+2025-01-23 14:14:15,392 [INFO] Task 5 Accuracy: 100.00%
+2025-01-23 14:14:15,392 [INFO] Task 7 evaluation on task 5: 100.00%
+2025-01-23 14:14:18,721 [INFO] Task 6 Accuracy: 100.00%
+2025-01-23 14:14:18,721 [INFO] Task 7 evaluation on task 6: 100.00%
+2025-01-23 14:14:22,115 [INFO] Task 7 Accuracy: 100.00%
+2025-01-23 14:14:22,115 [INFO] Task 7 evaluation on task 7: 100.00%
+2025-01-23 14:14:22,115 [INFO] 
+Starting task 8
+2025-01-23 14:14:25,592 [INFO] Task 8, Epoch 0: Loss = 0.7339, Acc = 84.50%
+2025-01-23 14:14:29,096 [INFO] Task 8, Epoch 1: Loss = 0.0395, Acc = 99.00%
+2025-01-23 14:14:32,570 [INFO] Task 8, Epoch 2: Loss = 0.0170, Acc = 99.70%
+2025-01-23 14:14:35,997 [INFO] Task 8, Epoch 3: Loss = 0.0081, Acc = 100.00%
+2025-01-23 14:14:39,472 [INFO] Task 8, Epoch 4: Loss = 0.0062, Acc = 100.00%
+2025-01-23 14:14:42,862 [INFO] Task 8, Epoch 5: Loss = 0.0046, Acc = 100.00%
+2025-01-23 14:14:46,263 [INFO] Task 8, Epoch 6: Loss = 0.0044, Acc = 100.00%
+2025-01-23 14:14:49,658 [INFO] Task 8, Epoch 7: Loss = 0.0037, Acc = 100.00%
+2025-01-23 14:14:53,096 [INFO] Task 8, Epoch 8: Loss = 0.0029, Acc = 100.00%
+2025-01-23 14:14:56,589 [INFO] Task 8, Epoch 9: Loss = 0.0025, Acc = 100.00%
+2025-01-23 14:14:56,589 [INFO] Task 8 completed. Average loss: 0.0025
+2025-01-23 14:14:59,892 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:14:59,892 [INFO] Task 8 evaluation on task 0: 100.00%
+2025-01-23 14:15:03,182 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:15:03,182 [INFO] Task 8 evaluation on task 1: 100.00%
+2025-01-23 14:15:06,472 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:15:06,472 [INFO] Task 8 evaluation on task 2: 100.00%
+2025-01-23 14:15:09,783 [INFO] Task 3 Accuracy: 100.00%
+2025-01-23 14:15:09,783 [INFO] Task 8 evaluation on task 3: 100.00%
+2025-01-23 14:15:13,131 [INFO] Task 4 Accuracy: 100.00%
+2025-01-23 14:15:13,131 [INFO] Task 8 evaluation on task 4: 100.00%
+2025-01-23 14:15:16,520 [INFO] Task 5 Accuracy: 100.00%
+2025-01-23 14:15:16,520 [INFO] Task 8 evaluation on task 5: 100.00%
+2025-01-23 14:15:19,808 [INFO] Task 6 Accuracy: 100.00%
+2025-01-23 14:15:19,808 [INFO] Task 8 evaluation on task 6: 100.00%
+2025-01-23 14:15:23,096 [INFO] Task 7 Accuracy: 100.00%
+2025-01-23 14:15:23,096 [INFO] Task 8 evaluation on task 7: 100.00%
+2025-01-23 14:15:26,405 [INFO] Task 8 Accuracy: 100.00%
+2025-01-23 14:15:26,406 [INFO] Task 8 evaluation on task 8: 100.00%
+2025-01-23 14:15:26,406 [INFO] 
+Starting task 9
+2025-01-23 14:15:29,835 [INFO] Task 9, Epoch 0: Loss = 0.8754, Acc = 81.40%
+2025-01-23 14:15:33,293 [INFO] Task 9, Epoch 1: Loss = 0.0385, Acc = 99.10%
+2025-01-23 14:15:36,745 [INFO] Task 9, Epoch 2: Loss = 0.0146, Acc = 99.80%
+2025-01-23 14:15:40,139 [INFO] Task 9, Epoch 3: Loss = 0.0079, Acc = 100.00%
+2025-01-23 14:15:43,533 [INFO] Task 9, Epoch 4: Loss = 0.0056, Acc = 100.00%
+2025-01-23 14:15:46,943 [INFO] Task 9, Epoch 5: Loss = 0.0045, Acc = 100.00%
+2025-01-23 14:15:50,383 [INFO] Task 9, Epoch 6: Loss = 0.0038, Acc = 100.00%
+2025-01-23 14:15:53,972 [INFO] Task 9, Epoch 7: Loss = 0.0035, Acc = 100.00%
+2025-01-23 14:15:57,475 [INFO] Task 9, Epoch 8: Loss = 0.0031, Acc = 100.00%
+2025-01-23 14:16:00,915 [INFO] Task 9, Epoch 9: Loss = 0.0025, Acc = 100.00%
+2025-01-23 14:16:00,915 [INFO] Task 9 completed. Average loss: 0.0025
+2025-01-23 14:16:04,276 [INFO] Task 0 Accuracy: 100.00%
+2025-01-23 14:16:04,276 [INFO] Task 9 evaluation on task 0: 100.00%
+2025-01-23 14:16:07,601 [INFO] Task 1 Accuracy: 100.00%
+2025-01-23 14:16:07,601 [INFO] Task 9 evaluation on task 1: 100.00%
+2025-01-23 14:16:10,995 [INFO] Task 2 Accuracy: 100.00%
+2025-01-23 14:16:10,995 [INFO] Task 9 evaluation on task 2: 100.00%
+2025-01-23 14:16:14,296 [INFO] Task 3 Accuracy: 100.00%
+2025-01-23 14:16:14,296 [INFO] Task 9 evaluation on task 3: 100.00%
+2025-01-23 14:16:17,593 [INFO] Task 4 Accuracy: 100.00%
+2025-01-23 14:16:17,593 [INFO] Task 9 evaluation on task 4: 100.00%
+2025-01-23 14:16:20,885 [INFO] Task 5 Accuracy: 100.00%
+2025-01-23 14:16:20,885 [INFO] Task 9 evaluation on task 5: 100.00%
+2025-01-23 14:16:24,186 [INFO] Task 6 Accuracy: 100.00%
+2025-01-23 14:16:24,187 [INFO] Task 9 evaluation on task 6: 100.00%
+2025-01-23 14:16:27,548 [INFO] Task 7 Accuracy: 100.00%
+2025-01-23 14:16:27,548 [INFO] Task 9 evaluation on task 7: 100.00%
+2025-01-23 14:16:30,916 [INFO] Task 8 Accuracy: 100.00%
+2025-01-23 14:16:30,916 [INFO] Task 9 evaluation on task 8: 100.00%
+2025-01-23 14:16:34,207 [INFO] Task 9 Accuracy: 100.00%
+2025-01-23 14:16:34,207 [INFO] Task 9 evaluation on task 9: 100.00%

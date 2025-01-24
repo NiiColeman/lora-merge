@@ -1,0 +1,16 @@
+2025-01-23 13:04:25,322 [INFO] Starting S-LoRA CIFAR-100 experiment
+2025-01-23 13:04:26,389 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg2_in21k_ft_in1k)
+2025-01-23 13:04:32,585 [INFO] [timm/vit_base_patch16_224.augreg2_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-01-23 13:04:35,353 [INFO] 
+Starting task 0
+2025-01-23 13:04:50,747 [INFO] Task 0, Epoch 0: Loss = 0.6604
+2025-01-23 13:05:03,690 [INFO] Task 0, Epoch 1: Loss = 0.0535
+2025-01-23 13:05:16,594 [INFO] Task 0, Epoch 2: Loss = 0.0240
+2025-01-23 13:05:29,505 [INFO] Task 0, Epoch 3: Loss = 0.0421
+2025-01-23 13:05:42,542 [INFO] Task 0, Epoch 4: Loss = 0.0117
+2025-01-23 13:05:55,504 [INFO] Task 0, Epoch 5: Loss = 0.0394
+2025-01-23 13:06:08,394 [INFO] Task 0, Epoch 6: Loss = 0.0980
+2025-01-23 13:06:21,302 [INFO] Task 0, Epoch 7: Loss = 0.1158
+2025-01-23 13:06:34,229 [INFO] Task 0, Epoch 8: Loss = 0.0619
+2025-01-23 13:06:47,155 [INFO] Task 0, Epoch 9: Loss = 0.0439
+2025-01-23 13:06:47,156 [INFO] Task 0 completed. Average loss: 0.1151
