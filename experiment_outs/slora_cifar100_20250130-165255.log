@@ -1,0 +1,1247 @@
+2025-01-30 16:52:58,516 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg2_in21k_ft_in1k)
+2025-01-30 16:53:01,613 [INFO] [timm/vit_base_patch16_224.augreg2_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-01-30 16:53:04,029 [INFO] SimpleDoRA(
+  (base_model): VisionTransformer(
+    (patch_embed): PatchEmbed(
+      (proj): Conv2d(3, 768, kernel_size=(16, 16), stride=(16, 16))
+      (norm): Identity()
+    )
+    (pos_drop): Dropout(p=0.0, inplace=False)
+    (patch_drop): Identity()
+    (norm_pre): Identity()
+    (blocks): Sequential(
+      (0): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (1): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (2): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (3): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (4): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (5): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (6): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (7): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (8): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (9): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (10): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+      (11): Block(
+        (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): lora.Linear(
+            (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Dropout(p=0.1, inplace=False)
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=768, out_features=8, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=8, out_features=2304, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+            (lora_magnitude_vector): ModuleDict(
+              (default): lora.dora.DoraLinearLayer()
+            )
+          )
+          (q_norm): Identity()
+          (k_norm): Identity()
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=768, out_features=768, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (ls1): Identity()
+        (drop_path1): Identity()
+        (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU(approximate='none')
+          (drop1): Dropout(p=0.0, inplace=False)
+          (norm): Identity()
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop2): Dropout(p=0.0, inplace=False)
+        )
+        (ls2): Identity()
+        (drop_path2): Identity()
+      )
+    )
+    (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+    (fc_norm): Identity()
+    (head_drop): Dropout(p=0.0, inplace=False)
+    (head): Identity()
+  )
+  (task_alphas): ParameterList(
+      (0): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (1): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (2): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (3): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (4): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (5): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (6): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (7): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (8): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+      (9): Parameter containing: [torch.float32 of size 1 (cuda:0)]
+  )
+  (classifier): Linear(in_features=768, out_features=100, bias=True)
+  (criterion): CrossEntropyLoss()
+  (lora_model): PeftModel(
+    (base_model): LoraModel(
+      (model): VisionTransformer(
+        (patch_embed): PatchEmbed(
+          (proj): Conv2d(3, 768, kernel_size=(16, 16), stride=(16, 16))
+          (norm): Identity()
+        )
+        (pos_drop): Dropout(p=0.0, inplace=False)
+        (patch_drop): Identity()
+        (norm_pre): Identity()
+        (blocks): Sequential(
+          (0): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (1): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (2): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (3): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (4): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (5): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (6): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (7): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (8): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (9): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (10): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+          (11): Block(
+            (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (attn): Attention(
+              (qkv): lora.Linear(
+                (base_layer): Linear(in_features=768, out_features=2304, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.1, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=768, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=2304, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict(
+                  (default): lora.dora.DoraLinearLayer()
+                )
+              )
+              (q_norm): Identity()
+              (k_norm): Identity()
+              (attn_drop): Dropout(p=0.0, inplace=False)
+              (proj): Linear(in_features=768, out_features=768, bias=True)
+              (proj_drop): Dropout(p=0.0, inplace=False)
+            )
+            (ls1): Identity()
+            (drop_path1): Identity()
+            (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+            (mlp): Mlp(
+              (fc1): Linear(in_features=768, out_features=3072, bias=True)
+              (act): GELU(approximate='none')
+              (drop1): Dropout(p=0.0, inplace=False)
+              (norm): Identity()
+              (fc2): Linear(in_features=3072, out_features=768, bias=True)
+              (drop2): Dropout(p=0.0, inplace=False)
+            )
+            (ls2): Identity()
+            (drop_path2): Identity()
+          )
+        )
+        (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (fc_norm): Identity()
+        (head_drop): Dropout(p=0.0, inplace=False)
+        (head): Identity()
+      )
+    )
+  )
+)
+2025-01-30 16:53:04,032 [INFO] 
+Starting task 0
+2025-01-30 16:53:12,306 [INFO] Task 0, Epoch 0: Loss = 1.2115, Acc = 76.20%
+2025-01-30 16:53:19,579 [INFO] Task 0, Epoch 1: Loss = 0.0391, Acc = 99.00%
+2025-01-30 16:53:26,846 [INFO] Task 0, Epoch 2: Loss = 0.0061, Acc = 100.00%
+2025-01-30 16:53:34,107 [INFO] Task 0, Epoch 3: Loss = 0.0026, Acc = 100.00%
+2025-01-30 16:53:41,366 [INFO] Task 0, Epoch 4: Loss = 0.0015, Acc = 100.00%
+2025-01-30 16:53:48,631 [INFO] Task 0, Epoch 5: Loss = 0.0011, Acc = 100.00%
+2025-01-30 16:53:55,894 [INFO] Task 0, Epoch 6: Loss = 0.0009, Acc = 100.00%
+2025-01-30 16:54:03,155 [INFO] Task 0, Epoch 7: Loss = 0.0007, Acc = 100.00%
+2025-01-30 16:54:10,416 [INFO] Task 0, Epoch 8: Loss = 0.0005, Acc = 100.00%
+2025-01-30 16:54:17,678 [INFO] Task 0, Epoch 9: Loss = 0.0004, Acc = 100.00%
+2025-01-30 16:54:24,937 [INFO] Task 0, Epoch 10: Loss = 0.0004, Acc = 100.00%
+2025-01-30 16:54:32,200 [INFO] Task 0, Epoch 11: Loss = 0.0003, Acc = 100.00%
+2025-01-30 16:54:39,463 [INFO] Task 0, Epoch 12: Loss = 0.0003, Acc = 100.00%
+2025-01-30 16:54:46,718 [INFO] Task 0, Epoch 13: Loss = 0.0002, Acc = 100.00%
+2025-01-30 16:54:53,981 [INFO] Task 0, Epoch 14: Loss = 0.0002, Acc = 100.00%
+2025-01-30 16:54:53,981 [INFO] Task 0 completed. Average loss: 0.0002
+2025-01-30 16:54:57,494 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 16:54:57,495 [INFO] 
+Starting task 1
+2025-01-30 16:55:04,450 [INFO] Task 1, Epoch 0: Loss = 1.9318, Acc = 66.30%
+2025-01-30 16:55:11,399 [INFO] Task 1, Epoch 1: Loss = 0.1066, Acc = 96.30%
+2025-01-30 16:55:18,360 [INFO] Task 1, Epoch 2: Loss = 0.0488, Acc = 99.20%
+2025-01-30 16:55:25,323 [INFO] Task 1, Epoch 3: Loss = 0.0294, Acc = 99.70%
+2025-01-30 16:55:32,287 [INFO] Task 1, Epoch 4: Loss = 0.0206, Acc = 100.00%
+2025-01-30 16:55:39,250 [INFO] Task 1, Epoch 5: Loss = 0.0149, Acc = 100.00%
+2025-01-30 16:55:46,212 [INFO] Task 1, Epoch 6: Loss = 0.0114, Acc = 100.00%
+2025-01-30 16:55:53,171 [INFO] Task 1, Epoch 7: Loss = 0.0094, Acc = 100.00%
+2025-01-30 16:56:00,135 [INFO] Task 1, Epoch 8: Loss = 0.0081, Acc = 100.00%
+2025-01-30 16:56:07,099 [INFO] Task 1, Epoch 9: Loss = 0.0071, Acc = 100.00%
+2025-01-30 16:56:14,068 [INFO] Task 1, Epoch 10: Loss = 0.0061, Acc = 100.00%
+2025-01-30 16:56:21,032 [INFO] Task 1, Epoch 11: Loss = 0.0054, Acc = 100.00%
+2025-01-30 16:56:27,996 [INFO] Task 1, Epoch 12: Loss = 0.0049, Acc = 100.00%
+2025-01-30 16:56:34,944 [INFO] Task 1, Epoch 13: Loss = 0.0043, Acc = 100.00%
+2025-01-30 16:56:41,906 [INFO] Task 1, Epoch 14: Loss = 0.0038, Acc = 100.00%
+2025-01-30 16:56:41,906 [INFO] Task 1 completed. Average loss: 0.0038
+2025-01-30 16:56:47,944 [INFO] Accuracy on task 0: 24.70%
+2025-01-30 16:56:53,983 [INFO] Accuracy on task 1: 100.00%
+2025-01-30 16:56:53,984 [INFO] 
+Starting task 2
+2025-01-30 16:57:00,945 [INFO] Task 2, Epoch 0: Loss = 1.9394, Acc = 72.00%
+2025-01-30 16:57:07,889 [INFO] Task 2, Epoch 1: Loss = 0.0602, Acc = 98.50%
+2025-01-30 16:57:14,832 [INFO] Task 2, Epoch 2: Loss = 0.0316, Acc = 99.70%
+2025-01-30 16:57:21,793 [INFO] Task 2, Epoch 3: Loss = 0.0176, Acc = 99.80%
+2025-01-30 16:57:28,757 [INFO] Task 2, Epoch 4: Loss = 0.0100, Acc = 99.90%
+2025-01-30 16:57:35,719 [INFO] Task 2, Epoch 5: Loss = 0.0076, Acc = 100.00%
+2025-01-30 16:57:42,675 [INFO] Task 2, Epoch 6: Loss = 0.0055, Acc = 100.00%
+2025-01-30 16:57:49,635 [INFO] Task 2, Epoch 7: Loss = 0.0046, Acc = 100.00%
+2025-01-30 16:57:56,592 [INFO] Task 2, Epoch 8: Loss = 0.0040, Acc = 100.00%
+2025-01-30 16:58:03,550 [INFO] Task 2, Epoch 9: Loss = 0.0036, Acc = 100.00%
+2025-01-30 16:58:10,501 [INFO] Task 2, Epoch 10: Loss = 0.0029, Acc = 100.00%
+2025-01-30 16:58:17,467 [INFO] Task 2, Epoch 11: Loss = 0.0027, Acc = 100.00%
+2025-01-30 16:58:24,430 [INFO] Task 2, Epoch 12: Loss = 0.0023, Acc = 100.00%
+2025-01-30 16:58:31,393 [INFO] Task 2, Epoch 13: Loss = 0.0021, Acc = 100.00%
+2025-01-30 16:58:38,360 [INFO] Task 2, Epoch 14: Loss = 0.0019, Acc = 100.00%
+2025-01-30 16:58:38,360 [INFO] Task 2 completed. Average loss: 0.0019
+2025-01-30 16:58:44,402 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 16:58:50,443 [INFO] Accuracy on task 1: 7.70%
+2025-01-30 16:58:56,490 [INFO] Accuracy on task 2: 100.00%
+2025-01-30 16:58:56,490 [INFO] 
+Starting task 3
+2025-01-30 16:59:03,450 [INFO] Task 3, Epoch 0: Loss = 1.5887, Acc = 71.40%
+2025-01-30 16:59:10,408 [INFO] Task 3, Epoch 1: Loss = 0.0542, Acc = 99.00%
+2025-01-30 16:59:17,378 [INFO] Task 3, Epoch 2: Loss = 0.0240, Acc = 99.80%
+2025-01-30 16:59:24,346 [INFO] Task 3, Epoch 3: Loss = 0.0160, Acc = 99.80%
+2025-01-30 16:59:31,320 [INFO] Task 3, Epoch 4: Loss = 0.0117, Acc = 99.90%
+2025-01-30 16:59:38,290 [INFO] Task 3, Epoch 5: Loss = 0.0081, Acc = 100.00%
+2025-01-30 16:59:45,261 [INFO] Task 3, Epoch 6: Loss = 0.0066, Acc = 100.00%
+2025-01-30 16:59:52,226 [INFO] Task 3, Epoch 7: Loss = 0.0055, Acc = 100.00%
+2025-01-30 16:59:59,191 [INFO] Task 3, Epoch 8: Loss = 0.0043, Acc = 100.00%
+2025-01-30 17:00:06,155 [INFO] Task 3, Epoch 9: Loss = 0.0039, Acc = 100.00%
+2025-01-30 17:00:13,116 [INFO] Task 3, Epoch 10: Loss = 0.0036, Acc = 100.00%
+2025-01-30 17:00:20,077 [INFO] Task 3, Epoch 11: Loss = 0.0030, Acc = 100.00%
+2025-01-30 17:00:27,038 [INFO] Task 3, Epoch 12: Loss = 0.0026, Acc = 100.00%
+2025-01-30 17:00:33,998 [INFO] Task 3, Epoch 13: Loss = 0.0024, Acc = 100.00%
+2025-01-30 17:00:40,958 [INFO] Task 3, Epoch 14: Loss = 0.0021, Acc = 100.00%
+2025-01-30 17:00:40,958 [INFO] Task 3 completed. Average loss: 0.0021
+2025-01-30 17:00:46,997 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 17:00:53,035 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 17:00:59,071 [INFO] Accuracy on task 2: 21.00%
+2025-01-30 17:01:05,109 [INFO] Accuracy on task 3: 100.00%
+2025-01-30 17:01:05,109 [INFO] 
+Starting task 4
+2025-01-30 17:01:12,069 [INFO] Task 4, Epoch 0: Loss = 1.4586, Acc = 74.70%
+2025-01-30 17:01:19,033 [INFO] Task 4, Epoch 1: Loss = 0.0506, Acc = 98.80%
+2025-01-30 17:01:25,994 [INFO] Task 4, Epoch 2: Loss = 0.0194, Acc = 99.90%
+2025-01-30 17:01:32,962 [INFO] Task 4, Epoch 3: Loss = 0.0126, Acc = 99.90%
+2025-01-30 17:01:39,926 [INFO] Task 4, Epoch 4: Loss = 0.0093, Acc = 100.00%
+2025-01-30 17:01:46,887 [INFO] Task 4, Epoch 5: Loss = 0.0072, Acc = 100.00%
+2025-01-30 17:01:53,851 [INFO] Task 4, Epoch 6: Loss = 0.0059, Acc = 100.00%
+2025-01-30 17:02:00,816 [INFO] Task 4, Epoch 7: Loss = 0.0049, Acc = 100.00%
+2025-01-30 17:02:07,771 [INFO] Task 4, Epoch 8: Loss = 0.0041, Acc = 100.00%
+2025-01-30 17:02:14,733 [INFO] Task 4, Epoch 9: Loss = 0.0036, Acc = 100.00%
+2025-01-30 17:02:21,698 [INFO] Task 4, Epoch 10: Loss = 0.0032, Acc = 100.00%
+2025-01-30 17:02:28,661 [INFO] Task 4, Epoch 11: Loss = 0.0029, Acc = 100.00%
+2025-01-30 17:02:35,622 [INFO] Task 4, Epoch 12: Loss = 0.0025, Acc = 100.00%
+2025-01-30 17:02:42,587 [INFO] Task 4, Epoch 13: Loss = 0.0024, Acc = 100.00%
+2025-01-30 17:02:49,551 [INFO] Task 4, Epoch 14: Loss = 0.0022, Acc = 100.00%
+2025-01-30 17:02:49,551 [INFO] Task 4 completed. Average loss: 0.0022
+2025-01-30 17:02:55,589 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 17:03:01,630 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 17:03:07,669 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 17:03:13,707 [INFO] Accuracy on task 3: 11.30%
+2025-01-30 17:03:19,741 [INFO] Accuracy on task 4: 100.00%
+2025-01-30 17:03:19,741 [INFO] 
+Starting task 5
+2025-01-30 17:03:26,710 [INFO] Task 5, Epoch 0: Loss = 1.9867, Acc = 65.80%
+2025-01-30 17:03:33,678 [INFO] Task 5, Epoch 1: Loss = 0.1088, Acc = 96.20%
+2025-01-30 17:03:40,636 [INFO] Task 5, Epoch 2: Loss = 0.0617, Acc = 98.70%
+2025-01-30 17:03:47,600 [INFO] Task 5, Epoch 3: Loss = 0.0410, Acc = 99.40%
+2025-01-30 17:03:54,562 [INFO] Task 5, Epoch 4: Loss = 0.0289, Acc = 99.30%
+2025-01-30 17:04:01,527 [INFO] Task 5, Epoch 5: Loss = 0.0231, Acc = 99.80%
+2025-01-30 17:04:08,488 [INFO] Task 5, Epoch 6: Loss = 0.0194, Acc = 100.00%
+2025-01-30 17:04:15,452 [INFO] Task 5, Epoch 7: Loss = 0.0134, Acc = 100.00%
+2025-01-30 17:04:22,415 [INFO] Task 5, Epoch 8: Loss = 0.0102, Acc = 100.00%
+2025-01-30 17:04:29,376 [INFO] Task 5, Epoch 9: Loss = 0.0099, Acc = 100.00%
+2025-01-30 17:04:36,337 [INFO] Task 5, Epoch 10: Loss = 0.0080, Acc = 100.00%
+2025-01-30 17:04:43,298 [INFO] Task 5, Epoch 11: Loss = 0.0072, Acc = 100.00%
+2025-01-30 17:04:50,263 [INFO] Task 5, Epoch 12: Loss = 0.0068, Acc = 100.00%
+2025-01-30 17:04:57,229 [INFO] Task 5, Epoch 13: Loss = 0.0059, Acc = 100.00%
+2025-01-30 17:05:04,200 [INFO] Task 5, Epoch 14: Loss = 0.0055, Acc = 100.00%
+2025-01-30 17:05:04,200 [INFO] Task 5 completed. Average loss: 0.0055
+2025-01-30 17:05:10,233 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 17:05:16,266 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 17:05:22,299 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 17:05:28,334 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 17:05:34,370 [INFO] Accuracy on task 4: 17.90%
+2025-01-30 17:05:40,407 [INFO] Accuracy on task 5: 100.00%
+2025-01-30 17:05:40,408 [INFO] 
+Starting task 6
+2025-01-30 17:05:47,375 [INFO] Task 6, Epoch 0: Loss = 1.5506, Acc = 72.40%
+2025-01-30 17:05:54,337 [INFO] Task 6, Epoch 1: Loss = 0.0807, Acc = 97.80%
+2025-01-30 17:06:01,301 [INFO] Task 6, Epoch 2: Loss = 0.0340, Acc = 99.70%
+2025-01-30 17:06:08,262 [INFO] Task 6, Epoch 3: Loss = 0.0192, Acc = 100.00%
+2025-01-30 17:06:15,223 [INFO] Task 6, Epoch 4: Loss = 0.0122, Acc = 100.00%
+2025-01-30 17:06:22,182 [INFO] Task 6, Epoch 5: Loss = 0.0091, Acc = 100.00%
+2025-01-30 17:06:29,147 [INFO] Task 6, Epoch 6: Loss = 0.0074, Acc = 100.00%
+2025-01-30 17:06:36,106 [INFO] Task 6, Epoch 7: Loss = 0.0064, Acc = 100.00%
+2025-01-30 17:06:43,069 [INFO] Task 6, Epoch 8: Loss = 0.0052, Acc = 100.00%
+2025-01-30 17:06:50,031 [INFO] Task 6, Epoch 9: Loss = 0.0045, Acc = 100.00%
+2025-01-30 17:06:57,002 [INFO] Task 6, Epoch 10: Loss = 0.0039, Acc = 100.00%
+2025-01-30 17:07:03,967 [INFO] Task 6, Epoch 11: Loss = 0.0035, Acc = 100.00%
+2025-01-30 17:07:10,931 [INFO] Task 6, Epoch 12: Loss = 0.0031, Acc = 100.00%
+2025-01-30 17:07:17,892 [INFO] Task 6, Epoch 13: Loss = 0.0029, Acc = 100.00%
+2025-01-30 17:07:24,853 [INFO] Task 6, Epoch 14: Loss = 0.0025, Acc = 100.00%
+2025-01-30 17:07:24,853 [INFO] Task 6 completed. Average loss: 0.0025
+2025-01-30 17:07:30,891 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 17:07:36,931 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 17:07:42,971 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 17:07:49,008 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 17:07:55,048 [INFO] Accuracy on task 4: 0.20%
+2025-01-30 17:08:01,087 [INFO] Accuracy on task 5: 16.40%
+2025-01-30 17:08:07,126 [INFO] Accuracy on task 6: 100.00%
+2025-01-30 17:08:07,126 [INFO] 
+Starting task 7
+2025-01-30 17:08:14,092 [INFO] Task 7, Epoch 0: Loss = 1.8317, Acc = 67.60%
+2025-01-30 17:08:21,054 [INFO] Task 7, Epoch 1: Loss = 0.1013, Acc = 97.40%
+2025-01-30 17:08:28,017 [INFO] Task 7, Epoch 2: Loss = 0.0541, Acc = 98.80%
+2025-01-30 17:08:34,980 [INFO] Task 7, Epoch 3: Loss = 0.0345, Acc = 99.30%
+2025-01-30 17:08:41,940 [INFO] Task 7, Epoch 4: Loss = 0.0200, Acc = 100.00%
+2025-01-30 17:08:48,903 [INFO] Task 7, Epoch 5: Loss = 0.0154, Acc = 99.90%
+2025-01-30 17:08:55,870 [INFO] Task 7, Epoch 6: Loss = 0.0111, Acc = 100.00%
+2025-01-30 17:09:02,833 [INFO] Task 7, Epoch 7: Loss = 0.0091, Acc = 100.00%
+2025-01-30 17:09:09,797 [INFO] Task 7, Epoch 8: Loss = 0.0075, Acc = 100.00%
+2025-01-30 17:09:16,758 [INFO] Task 7, Epoch 9: Loss = 0.0066, Acc = 100.00%
+2025-01-30 17:09:23,718 [INFO] Task 7, Epoch 10: Loss = 0.0056, Acc = 100.00%
+2025-01-30 17:09:30,682 [INFO] Task 7, Epoch 11: Loss = 0.0051, Acc = 100.00%
+2025-01-30 17:09:37,645 [INFO] Task 7, Epoch 12: Loss = 0.0044, Acc = 100.00%
+2025-01-30 17:09:44,607 [INFO] Task 7, Epoch 13: Loss = 0.0039, Acc = 100.00%
+2025-01-30 17:09:51,573 [INFO] Task 7, Epoch 14: Loss = 0.0037, Acc = 100.00%
+2025-01-30 17:09:51,573 [INFO] Task 7 completed. Average loss: 0.0037
+2025-01-30 17:09:57,610 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 17:10:03,649 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 17:10:09,687 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 17:10:15,721 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 17:10:21,759 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 17:10:27,795 [INFO] Accuracy on task 5: 0.20%
+2025-01-30 17:10:33,830 [INFO] Accuracy on task 6: 10.10%
+2025-01-30 17:10:39,864 [INFO] Accuracy on task 7: 100.00%
+2025-01-30 17:10:39,865 [INFO] 
+Starting task 8
+2025-01-30 17:10:46,818 [INFO] Task 8, Epoch 0: Loss = 1.4754, Acc = 72.80%
+2025-01-30 17:10:53,775 [INFO] Task 8, Epoch 1: Loss = 0.0435, Acc = 98.80%
+2025-01-30 17:11:00,735 [INFO] Task 8, Epoch 2: Loss = 0.0211, Acc = 99.80%
+2025-01-30 17:11:07,696 [INFO] Task 8, Epoch 3: Loss = 0.0127, Acc = 100.00%
+2025-01-30 17:11:14,654 [INFO] Task 8, Epoch 4: Loss = 0.0085, Acc = 100.00%
+2025-01-30 17:11:21,616 [INFO] Task 8, Epoch 5: Loss = 0.0067, Acc = 100.00%
+2025-01-30 17:11:28,573 [INFO] Task 8, Epoch 6: Loss = 0.0052, Acc = 100.00%
+2025-01-30 17:11:35,532 [INFO] Task 8, Epoch 7: Loss = 0.0043, Acc = 100.00%
+2025-01-30 17:11:42,495 [INFO] Task 8, Epoch 8: Loss = 0.0038, Acc = 100.00%
+2025-01-30 17:11:49,457 [INFO] Task 8, Epoch 9: Loss = 0.0032, Acc = 100.00%
+2025-01-30 17:11:56,418 [INFO] Task 8, Epoch 10: Loss = 0.0028, Acc = 100.00%
+2025-01-30 17:12:03,385 [INFO] Task 8, Epoch 11: Loss = 0.0026, Acc = 100.00%
+2025-01-30 17:12:10,349 [INFO] Task 8, Epoch 12: Loss = 0.0022, Acc = 100.00%
+2025-01-30 17:12:17,309 [INFO] Task 8, Epoch 13: Loss = 0.0020, Acc = 100.00%
+2025-01-30 17:12:24,270 [INFO] Task 8, Epoch 14: Loss = 0.0019, Acc = 100.00%
+2025-01-30 17:12:24,270 [INFO] Task 8 completed. Average loss: 0.0019
+2025-01-30 17:12:30,310 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 17:12:36,350 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 17:12:42,392 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 17:12:48,430 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 17:12:54,469 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 17:13:00,508 [INFO] Accuracy on task 5: 0.00%
+2025-01-30 17:13:06,547 [INFO] Accuracy on task 6: 0.00%
+2025-01-30 17:13:12,587 [INFO] Accuracy on task 7: 14.40%
+2025-01-30 17:13:18,626 [INFO] Accuracy on task 8: 100.00%
+2025-01-30 17:13:18,627 [INFO] 
+Starting task 9
+2025-01-30 17:13:25,589 [INFO] Task 9, Epoch 0: Loss = 1.3706, Acc = 75.30%
+2025-01-30 17:13:32,552 [INFO] Task 9, Epoch 1: Loss = 0.0387, Acc = 99.40%
+2025-01-30 17:13:39,513 [INFO] Task 9, Epoch 2: Loss = 0.0172, Acc = 99.90%
+2025-01-30 17:13:46,476 [INFO] Task 9, Epoch 3: Loss = 0.0088, Acc = 100.00%
+2025-01-30 17:13:53,440 [INFO] Task 9, Epoch 4: Loss = 0.0061, Acc = 100.00%
+2025-01-30 17:14:00,401 [INFO] Task 9, Epoch 5: Loss = 0.0048, Acc = 100.00%
+2025-01-30 17:14:07,364 [INFO] Task 9, Epoch 6: Loss = 0.0040, Acc = 100.00%
+2025-01-30 17:14:14,324 [INFO] Task 9, Epoch 7: Loss = 0.0034, Acc = 100.00%
+2025-01-30 17:14:21,285 [INFO] Task 9, Epoch 8: Loss = 0.0026, Acc = 100.00%
+2025-01-30 17:14:28,246 [INFO] Task 9, Epoch 9: Loss = 0.0024, Acc = 100.00%
+2025-01-30 17:14:35,206 [INFO] Task 9, Epoch 10: Loss = 0.0021, Acc = 100.00%
+2025-01-30 17:14:42,164 [INFO] Task 9, Epoch 11: Loss = 0.0020, Acc = 100.00%
+2025-01-30 17:14:49,127 [INFO] Task 9, Epoch 12: Loss = 0.0016, Acc = 100.00%
+2025-01-30 17:14:56,082 [INFO] Task 9, Epoch 13: Loss = 0.0015, Acc = 100.00%
+2025-01-30 17:15:03,043 [INFO] Task 9, Epoch 14: Loss = 0.0013, Acc = 100.00%
+2025-01-30 17:15:03,043 [INFO] Task 9 completed. Average loss: 0.0013
+2025-01-30 17:15:09,075 [INFO] Accuracy on task 0: 0.00%
+2025-01-30 17:15:15,107 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 17:15:21,139 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 17:15:27,170 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 17:15:33,204 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 17:15:39,238 [INFO] Accuracy on task 5: 0.00%
+2025-01-30 17:15:45,268 [INFO] Accuracy on task 6: 0.00%
+2025-01-30 17:15:51,300 [INFO] Accuracy on task 7: 0.00%
+2025-01-30 17:15:57,331 [INFO] Accuracy on task 8: 11.20%
+2025-01-30 17:16:03,364 [INFO] Accuracy on task 9: 100.00%

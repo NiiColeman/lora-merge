@@ -13,6 +13,10 @@ import os
 import torchvision
 from torchvision import transforms
 from peft.tuners.lora.dora import DoraLinearLayer
+import torch.nn.functional as F
+import sys
+
+
 
 
 # Setup logging
@@ -41,11 +45,11 @@ test_transform = transforms.Compose([
 
 # Configs
 NUM_TASKS = 10
-EPOCHS = 10
-BATCH_SIZE = 128
+EPOCHS = 15
+BATCH_SIZE = 32
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 LORA_R = 8
-LORA_ALPHA = 1
+LORA_ALPHA = 32
 LORA_DROPOUT = 0.1
 
 def create_benchmark():
@@ -60,181 +64,189 @@ def create_model():
     return model
 
 
-
-class SLoRA:
+class SimpleDoRA(nn.Module):
     def __init__(self, base_model, num_tasks):
+        super().__init__()
         self.base_model = base_model.to(DEVICE)
-        self.classifier = nn.Linear(768, 100).to(DEVICE)
+        self.num_tasks = num_tasks
+        self.task_alphas = nn.ParameterList([nn.Parameter(torch.ones(1)) for _ in range(num_tasks)])
+        
+        # Replace Identity head with our classifier
+        self.base_model.head = nn.Linear(768, 100).to(DEVICE)
+        
         self.criterion = nn.CrossEntropyLoss()
         self.seen_classes = set()
-        self.task_magnitudes = {}
         
         lora_config = LoraConfig(
             r=LORA_R,
             lora_alpha=1,
             target_modules=["qkv"],
-            use_dora=True,
+            # use_dora=True,
             lora_dropout=LORA_DROPOUT,
             bias="none"
         )
         self.lora_model = get_peft_model(base_model, lora_config)
-        
-    def save_magnitudes(self, task_id):
-        magnitudes = {}
-        for name, module in self.lora_model.named_modules():
-            if isinstance(module, DoraLinearLayer):
-                magnitudes[name] = module.weight.data.clone()
-        self.task_magnitudes[task_id] = magnitudes
-        
-    def load_magnitudes(self, task_id):
-        if task_id in self.task_magnitudes:
-            for name, module in self.lora_model.named_modules():
-                if isinstance(module, DoraLinearLayer):
-                    module.weight.data = self.task_magnitudes[task_id][name].clone()
+    
+    def forward(self, x, task_id):
+        if task_id == 0:
+            return self.lora_model(x)
+        else:
+            base_output = self.base_model(x)
+            dora_output= self.lora_model(x)
+            scaled_delta = self.task_alphas[task_id] * (dora_output - base_output)
+            dora_delta = self.lora_model(x) - base_output
+            return base_output + scaled_delta
     
     def train_task(self, train_loader, task_id, current_classes):
         self.seen_classes.update(current_classes)
-        self.lora_model.train()
-        total_loss = 0
+        print(f"\nStarting training for task {task_id}")
+        
+        # Ensure head is trainable
+        for param in self.base_model.head.parameters():
+            param.requires_grad = True
         
         if task_id == 0:
-            trainable_params = [
-                {'params': self.lora_model.parameters()},
-                {'params': self.classifier.parameters()},
-            ]
-        else:
-            # Freeze LoRA, only train magnitude
+            trainable_params = []
             for n, p in self.lora_model.named_parameters():
-                if 'lora_' in n:  
+                if 'lora_' in n:
+                    trainable_params.append(p)
+            optimizer = torch.optim.Adam([
+                {'params': trainable_params},
+                {'params': self.base_model.head.parameters(), 'lr': 0.001}  # Explicit head params
+            ], lr=0.001, weight_decay=1e-3)
+        else:
+            # Freeze LoRA parameters
+            for n, p in self.lora_model.named_parameters():
+                if 'lora_' in n:
                     p.requires_grad = False
-                elif '.weight' in n:  
-                    p.requires_grad = True
-            trainable_params = [
-                {'params': [p for n, p in self.lora_model.named_parameters() if '.weight' in n]},
-                {'params': self.classifier.parameters()}
-            ]
             
-        optimizer = torch.optim.Adam(trainable_params, lr=0.001, weight_decay=0.9)
+            # Explicitly get head parameters
+            head_params = list(self.base_model.head.parameters())
+            optimizer = torch.optim.Adam([
+                {'params': self.task_alphas[task_id]},
+                {'params': head_params, 'lr': 0.001}  # Explicit learning rate
+            ], lr=0.001)
         
-        # Get indices for classes not in current task
-        all_classes = set(range(100))
-        not_current_classes = list(all_classes - set(current_classes))
-        mask_tensor = torch.tensor(not_current_classes, dtype=torch.int64).to(DEVICE)
+        # Print which parameters are trainable
+        print("\nTrainable parameters:")
+        for name, param in self.named_parameters():
+            if param.requires_grad:
+                print(f"{name}: {param.shape}")
         
-        for epoch in tqdm(range(EPOCHS), desc=f'Task {task_id} Training'):
-            epoch_loss = 0
+        final_epoch_loss = 0
+        for epoch in range(EPOCHS):
+            total_loss = 0
             correct = 0
             total = 0
             
-            for inputs, targets, _ in train_loader:
-                inputs, targets = inputs.to(DEVICE), targets.to(DEVICE)
+            self.train()
+            for batch_idx, (inputs, targets,_), in enumerate(train_loader):
+                inputs = inputs.to(DEVICE)
+                targets = targets.to(DEVICE)
                 
-                features = self.lora_model(inputs)
-                logits = self.classifier(features)
-                
-                # Mask logits with -inf for non-current classes
-                masked_logits = logits.index_fill(dim=1, index=mask_tensor, value=float('-inf'))
-                
-                loss = self.criterion(masked_logits, targets)
                 optimizer.zero_grad()
+                outputs = self.forward(inputs, task_id)
+                
+                # Debug first batch
+                if batch_idx == 0:
+                    with torch.no_grad():
+                        base_out = self.base_model(inputs)
+                        dora_out = self.lora_model(inputs)
+                        print(f"\nEpoch {epoch} diagnostics:")
+                        print(f"Base output norm: {base_out.norm():.4f}")
+                        print(f"DoRA output norm: {dora_out.norm():.4f}")
+                        print(f"Difference norm: {(dora_out - base_out).norm():.4f}")
+                        if task_id > 0:
+                            print(f"Current alpha value: {self.task_alphas[task_id].item():.4f}")
+                
+                # Apply mask for seen classes
+                mask = torch.zeros_like(outputs, device=DEVICE)
+                mask[:, list(self.seen_classes)] = 1
+                outputs = outputs * mask
+                
+                loss = self.criterion(outputs, targets)
                 loss.backward()
+                
+                # Debug gradients
+                if batch_idx == 0:
+                    if task_id > 0:
+                        alpha_grad = self.task_alphas[task_id].grad
+                        if alpha_grad is not None:
+                            logging.info(f"Alpha gradient: {alpha_grad.item():.4f}")
+                            print(f"Alpha gradient: {alpha_grad.item():.4f}")
+                    
+                    head_grad = self.base_model.head.weight.grad
+                    if head_grad is not None:
+                        print(f"Head gradient norm: {head_grad.norm():.4f}")
+                        logging.info(f"Head gradient norm: {head_grad.norm():.4f}")
+                    else:
+                        print("Head gradient is None - STILL AN ISSUE!")
+                        logging.info("Head gradient is None - STILL AN ISSUE!")
+                
                 optimizer.step()
                 
-                _, predicted = masked_logits.max(1)
+                _, predicted = outputs.max(1)
                 total += targets.size(0)
                 correct += predicted.eq(targets).sum().item()
-                epoch_loss += loss.item()
+                total_loss += loss.item()
             
-            avg_epoch_loss = epoch_loss / len(train_loader)
-            train_acc = 100. * correct / total
-            logging.info(f'Task {task_id}, Epoch {epoch}: Loss = {avg_epoch_loss:.4f}, Acc = {train_acc:.2f}%')
-            total_loss += avg_epoch_loss
-            
-        # Save magnitudes after training
-        self.save_magnitudes(task_id)
-        return total_loss / EPOCHS
+            epoch_loss = total_loss / len(train_loader)
+            accuracy = 100. * correct / total
+            logging.info(f'Task {task_id}, Epoch {epoch}: Loss = {epoch_loss:.4f}, Acc = {accuracy:.2f}%')
+            final_epoch_loss = epoch_loss
+        
+        return final_epoch_loss
 
-    def evaluate(self, test_loader):
-        self.lora_model.eval()
+    def evaluate(self, test_loader, task_id):
+        self.eval()
         correct = 0
         total = 0
         
         with torch.no_grad():
             for inputs, targets,_ in test_loader:
-                inputs, targets = inputs.to(DEVICE), targets.to(DEVICE)
-                features = self.lora_model(inputs)
-                outputs = self.classifier(features)
+                inputs = inputs.to(DEVICE)
+                targets = targets.to(DEVICE)
                 
-                # No masking during evaluation - test on all seen classes
+                outputs = self.forward(inputs, task_id)
                 _, predicted = outputs.max(1)
+                
                 total += targets.size(0)
                 correct += predicted.eq(targets).sum().item()
         
-        accuracy = 100. * correct / total
-        return accuracy
+        return 100. * correct / total
+        
+
+
 
 def main():
-    # set_deterministic_run(seed=42)
-    seed=42
-    logging.info("Starting S-LoRA CIFAR-100 experiment")
-    
-    base_model = create_model()
+# Initialize Progressive DoRA
     scenario = create_benchmark()
-    slora = SLoRA(base_model, NUM_TASKS)
+    base_model = create_model()
+    model = SimpleDoRA(base_model, NUM_TASKS)
+    model = model.to(DEVICE)
+  
+  
     
+    # Training loop
     for task_id, experience in enumerate(scenario.train_stream):
         logging.info(f"\nStarting task {task_id}")
+        
+        # Get current task data
+        train_loader = DataLoader(experience.dataset, batch_size=BATCH_SIZE, shuffle=True)
         current_classes = experience.classes_in_this_experience
         
-        train_loader = DataLoader(experience.dataset, batch_size=BATCH_SIZE, shuffle=True)
-        
-        # Train task
-        avg_loss = slora.train_task(train_loader, task_id, current_classes)
+        # Train on current task
+        avg_loss = model.train_task(train_loader, task_id, current_classes)
         logging.info(f"Task {task_id} completed. Average loss: {avg_loss:.4f}")
         
         # Evaluate on all seen tasks
         for eval_task_id in range(task_id + 1):
-            # Load task-specific magnitudes for evaluation
-            slora.load_magnitudes(eval_task_id)
-            eval_loader = DataLoader(scenario.test_stream[eval_task_id].dataset, batch_size=BATCH_SIZE)
-            accuracy = slora.evaluate(eval_loader)
+            eval_loader = DataLoader(
+                scenario.test_stream[eval_task_id].dataset,
+                batch_size=BATCH_SIZE
+            )
+            accuracy = model.evaluate(eval_loader, task_id)
             logging.info(f"Accuracy on task {eval_task_id}: {accuracy:.2f}%")
 
-
-
 if __name__ == "__main__":
-    logging.info("""
-    Summary of S-DoRA CIFAR-100 Benchmark
-
-    1. Benchmark Setup:
-    - Split CIFAR100 into 10 tasks using Avalanche
-    - Each task has 10 classes with class-incremental setup
-
-    2. SLoRA Class Structure:
-    - Manages LoRA directions, alphas, and Incremental classifier + mask
-    - ParameterList for alphas allows independent learning per task
-
-    3. Training Strategy:
-    - Task 0: Train LoRA direction (AB matrices) and alpha
-    - Tasks 1-9: Freeze LoRA direction, only train new alpha and classifier
-    - Uses masks to focus on current task classes
-
-    4. Evaluation:
-    - Tests each trained task on all previous tasks
-    - Tracks accuracy using incrementally trained classifier with mask
-    - Maintains running evaluation metrics
-
-    5. Logging:
-    - Timestamped files for experiment tracking
-    - Records loss, accuracy, and key events
-    - Uses tqdm for progress visualization
-
-   
-    """)
-
     main()
-
-
-
-
-    

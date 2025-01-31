@@ -1,0 +1,522 @@
+2025-01-30 17:58:07,574 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg2_in21k_ft_in1k)
+2025-01-30 17:58:07,598 [INFO] [timm/vit_base_patch16_224.augreg2_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-01-30 17:58:12,593 [INFO] 
+Starting task 0
+2025-01-30 17:58:15,645 [INFO] Head gradient is None
+2025-01-30 17:58:22,669 [INFO] Task 0, Epoch 0: Loss = 4.0256, Acc = 11.00%
+2025-01-30 17:58:23,086 [INFO] Head gradient is None
+2025-01-30 17:58:30,052 [INFO] Task 0, Epoch 1: Loss = 1.0998, Acc = 64.30%
+2025-01-30 17:58:30,469 [INFO] Head gradient is None
+2025-01-30 17:58:37,441 [INFO] Task 0, Epoch 2: Loss = 0.2659, Acc = 94.10%
+2025-01-30 17:58:37,858 [INFO] Head gradient is None
+2025-01-30 17:58:44,828 [INFO] Task 0, Epoch 3: Loss = 0.0930, Acc = 98.30%
+2025-01-30 17:58:45,244 [INFO] Head gradient is None
+2025-01-30 17:58:52,213 [INFO] Task 0, Epoch 4: Loss = 0.0401, Acc = 99.60%
+2025-01-30 17:58:52,630 [INFO] Head gradient is None
+2025-01-30 17:58:59,601 [INFO] Task 0, Epoch 5: Loss = 0.0210, Acc = 99.90%
+2025-01-30 17:59:00,022 [INFO] Head gradient is None
+2025-01-30 17:59:07,003 [INFO] Task 0, Epoch 6: Loss = 0.0122, Acc = 100.00%
+2025-01-30 17:59:07,425 [INFO] Head gradient is None
+2025-01-30 17:59:14,413 [INFO] Task 0, Epoch 7: Loss = 0.0081, Acc = 100.00%
+2025-01-30 17:59:14,834 [INFO] Head gradient is None
+2025-01-30 17:59:21,818 [INFO] Task 0, Epoch 8: Loss = 0.0053, Acc = 100.00%
+2025-01-30 17:59:22,240 [INFO] Head gradient is None
+2025-01-30 17:59:29,222 [INFO] Task 0, Epoch 9: Loss = 0.0040, Acc = 100.00%
+2025-01-30 17:59:29,639 [INFO] Head gradient is None
+2025-01-30 17:59:36,611 [INFO] Task 0, Epoch 10: Loss = 0.0033, Acc = 100.00%
+2025-01-30 17:59:37,033 [INFO] Head gradient is None
+2025-01-30 17:59:44,020 [INFO] Task 0, Epoch 11: Loss = 0.0027, Acc = 100.00%
+2025-01-30 17:59:44,436 [INFO] Head gradient is None
+2025-01-30 17:59:51,410 [INFO] Task 0, Epoch 12: Loss = 0.0023, Acc = 100.00%
+2025-01-30 17:59:51,827 [INFO] Head gradient is None
+2025-01-30 17:59:58,801 [INFO] Task 0, Epoch 13: Loss = 0.0019, Acc = 100.00%
+2025-01-30 17:59:59,222 [INFO] Head gradient is None
+2025-01-30 18:00:06,207 [INFO] Task 0, Epoch 14: Loss = 0.0017, Acc = 100.00%
+2025-01-30 18:00:06,207 [INFO] Task 0 completed. Average loss: 0.0017
+2025-01-30 18:00:09,699 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:00:09,699 [INFO] 
+Starting task 1
+2025-01-30 18:00:10,200 [INFO] Alpha gradient: -0.0368
+2025-01-30 18:00:10,200 [INFO] Head gradient is None
+2025-01-30 18:00:19,706 [INFO] Task 1, Epoch 0: Loss = 9.8053, Acc = 0.00%
+2025-01-30 18:00:20,207 [INFO] Alpha gradient: -0.0108
+2025-01-30 18:00:20,207 [INFO] Head gradient is None
+2025-01-30 18:00:29,713 [INFO] Task 1, Epoch 1: Loss = 9.8473, Acc = 0.00%
+2025-01-30 18:00:30,219 [INFO] Alpha gradient: -0.0031
+2025-01-30 18:00:30,219 [INFO] Head gradient is None
+2025-01-30 18:00:39,742 [INFO] Task 1, Epoch 2: Loss = 9.8356, Acc = 0.00%
+2025-01-30 18:00:40,248 [INFO] Alpha gradient: 0.0204
+2025-01-30 18:00:40,248 [INFO] Head gradient is None
+2025-01-30 18:00:49,775 [INFO] Task 1, Epoch 3: Loss = 9.8158, Acc = 0.00%
+2025-01-30 18:00:50,281 [INFO] Alpha gradient: 0.0055
+2025-01-30 18:00:50,281 [INFO] Head gradient is None
+2025-01-30 18:00:59,811 [INFO] Task 1, Epoch 4: Loss = 9.8186, Acc = 0.00%
+2025-01-30 18:01:00,311 [INFO] Alpha gradient: 0.0118
+2025-01-30 18:01:00,311 [INFO] Head gradient is None
+2025-01-30 18:01:09,829 [INFO] Task 1, Epoch 5: Loss = 9.8269, Acc = 0.00%
+2025-01-30 18:01:10,335 [INFO] Alpha gradient: 0.0116
+2025-01-30 18:01:10,336 [INFO] Head gradient is None
+2025-01-30 18:01:19,865 [INFO] Task 1, Epoch 6: Loss = 9.8387, Acc = 0.00%
+2025-01-30 18:01:20,366 [INFO] Alpha gradient: 0.0024
+2025-01-30 18:01:20,366 [INFO] Head gradient is None
+2025-01-30 18:01:29,885 [INFO] Task 1, Epoch 7: Loss = 9.8523, Acc = 0.00%
+2025-01-30 18:01:30,386 [INFO] Alpha gradient: 0.0020
+2025-01-30 18:01:30,386 [INFO] Head gradient is None
+2025-01-30 18:01:39,908 [INFO] Task 1, Epoch 8: Loss = 9.8159, Acc = 0.00%
+2025-01-30 18:01:40,414 [INFO] Alpha gradient: 0.0048
+2025-01-30 18:01:40,414 [INFO] Head gradient is None
+2025-01-30 18:01:49,950 [INFO] Task 1, Epoch 9: Loss = 9.8970, Acc = 0.00%
+2025-01-30 18:01:50,456 [INFO] Alpha gradient: 0.0088
+2025-01-30 18:01:50,456 [INFO] Head gradient is None
+2025-01-30 18:01:59,986 [INFO] Task 1, Epoch 10: Loss = 9.8359, Acc = 0.00%
+2025-01-30 18:02:00,493 [INFO] Alpha gradient: 0.0002
+2025-01-30 18:02:00,494 [INFO] Head gradient is None
+2025-01-30 18:02:10,024 [INFO] Task 1, Epoch 11: Loss = 9.8492, Acc = 0.00%
+2025-01-30 18:02:10,526 [INFO] Alpha gradient: 0.0065
+2025-01-30 18:02:10,526 [INFO] Head gradient is None
+2025-01-30 18:02:20,051 [INFO] Task 1, Epoch 12: Loss = 9.8141, Acc = 0.00%
+2025-01-30 18:02:20,558 [INFO] Alpha gradient: -0.0276
+2025-01-30 18:02:20,558 [INFO] Head gradient is None
+2025-01-30 18:02:30,088 [INFO] Task 1, Epoch 13: Loss = 9.8465, Acc = 0.00%
+2025-01-30 18:02:30,589 [INFO] Alpha gradient: -0.0090
+2025-01-30 18:02:30,589 [INFO] Head gradient is None
+2025-01-30 18:02:40,112 [INFO] Task 1, Epoch 14: Loss = 9.8321, Acc = 0.00%
+2025-01-30 18:02:40,113 [INFO] Task 1 completed. Average loss: 9.8321
+2025-01-30 18:02:48,617 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:02:57,122 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:02:57,122 [INFO] 
+Starting task 2
+2025-01-30 18:02:57,624 [INFO] Alpha gradient: 0.0041
+2025-01-30 18:02:57,625 [INFO] Head gradient is None
+2025-01-30 18:03:07,149 [INFO] Task 2, Epoch 0: Loss = 11.0045, Acc = 0.00%
+2025-01-30 18:03:07,656 [INFO] Alpha gradient: -0.0158
+2025-01-30 18:03:07,656 [INFO] Head gradient is None
+2025-01-30 18:03:17,188 [INFO] Task 2, Epoch 1: Loss = 10.9689, Acc = 0.00%
+2025-01-30 18:03:17,696 [INFO] Alpha gradient: 0.0206
+2025-01-30 18:03:17,696 [INFO] Head gradient is None
+2025-01-30 18:03:27,224 [INFO] Task 2, Epoch 2: Loss = 11.0330, Acc = 0.00%
+2025-01-30 18:03:27,725 [INFO] Alpha gradient: -0.0011
+2025-01-30 18:03:27,725 [INFO] Head gradient is None
+2025-01-30 18:03:37,245 [INFO] Task 2, Epoch 3: Loss = 10.9698, Acc = 0.00%
+2025-01-30 18:03:37,746 [INFO] Alpha gradient: -0.0236
+2025-01-30 18:03:37,746 [INFO] Head gradient is None
+2025-01-30 18:03:47,263 [INFO] Task 2, Epoch 4: Loss = 11.0302, Acc = 0.00%
+2025-01-30 18:03:47,764 [INFO] Alpha gradient: -0.0106
+2025-01-30 18:03:47,764 [INFO] Head gradient is None
+2025-01-30 18:03:57,284 [INFO] Task 2, Epoch 5: Loss = 11.0465, Acc = 0.00%
+2025-01-30 18:03:57,784 [INFO] Alpha gradient: -0.0170
+2025-01-30 18:03:57,784 [INFO] Head gradient is None
+2025-01-30 18:04:07,306 [INFO] Task 2, Epoch 6: Loss = 11.0114, Acc = 0.00%
+2025-01-30 18:04:07,813 [INFO] Alpha gradient: 0.0139
+2025-01-30 18:04:07,813 [INFO] Head gradient is None
+2025-01-30 18:04:17,346 [INFO] Task 2, Epoch 7: Loss = 11.0338, Acc = 0.00%
+2025-01-30 18:04:17,851 [INFO] Alpha gradient: 0.0358
+2025-01-30 18:04:17,851 [INFO] Head gradient is None
+2025-01-30 18:04:27,381 [INFO] Task 2, Epoch 8: Loss = 11.0006, Acc = 0.00%
+2025-01-30 18:04:27,887 [INFO] Alpha gradient: -0.0082
+2025-01-30 18:04:27,887 [INFO] Head gradient is None
+2025-01-30 18:04:37,416 [INFO] Task 2, Epoch 9: Loss = 11.0235, Acc = 0.00%
+2025-01-30 18:04:37,917 [INFO] Alpha gradient: -0.0174
+2025-01-30 18:04:37,917 [INFO] Head gradient is None
+2025-01-30 18:04:47,438 [INFO] Task 2, Epoch 10: Loss = 11.0125, Acc = 0.00%
+2025-01-30 18:04:47,944 [INFO] Alpha gradient: 0.0097
+2025-01-30 18:04:47,945 [INFO] Head gradient is None
+2025-01-30 18:04:57,476 [INFO] Task 2, Epoch 11: Loss = 10.9785, Acc = 0.00%
+2025-01-30 18:04:57,982 [INFO] Alpha gradient: -0.0128
+2025-01-30 18:04:57,982 [INFO] Head gradient is None
+2025-01-30 18:05:07,519 [INFO] Task 2, Epoch 12: Loss = 11.0373, Acc = 0.00%
+2025-01-30 18:05:08,019 [INFO] Alpha gradient: -0.0141
+2025-01-30 18:05:08,019 [INFO] Head gradient is None
+2025-01-30 18:05:17,535 [INFO] Task 2, Epoch 13: Loss = 10.9911, Acc = 0.00%
+2025-01-30 18:05:18,041 [INFO] Alpha gradient: 0.0231
+2025-01-30 18:05:18,041 [INFO] Head gradient is None
+2025-01-30 18:05:27,575 [INFO] Task 2, Epoch 14: Loss = 10.9941, Acc = 0.00%
+2025-01-30 18:05:27,575 [INFO] Task 2 completed. Average loss: 10.9941
+2025-01-30 18:05:36,090 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:05:44,593 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:05:53,097 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:05:53,097 [INFO] 
+Starting task 3
+2025-01-30 18:05:53,599 [INFO] Alpha gradient: 0.0581
+2025-01-30 18:05:53,599 [INFO] Head gradient is None
+2025-01-30 18:06:03,126 [INFO] Task 3, Epoch 0: Loss = 10.3958, Acc = 0.00%
+2025-01-30 18:06:03,627 [INFO] Alpha gradient: -0.0066
+2025-01-30 18:06:03,627 [INFO] Head gradient is None
+2025-01-30 18:06:13,149 [INFO] Task 3, Epoch 1: Loss = 10.3372, Acc = 0.00%
+2025-01-30 18:06:13,655 [INFO] Alpha gradient: 0.0104
+2025-01-30 18:06:13,655 [INFO] Head gradient is None
+2025-01-30 18:06:23,185 [INFO] Task 3, Epoch 2: Loss = 10.3680, Acc = 0.00%
+2025-01-30 18:06:23,686 [INFO] Alpha gradient: -0.0152
+2025-01-30 18:06:23,686 [INFO] Head gradient is None
+2025-01-30 18:06:33,207 [INFO] Task 3, Epoch 3: Loss = 10.3794, Acc = 0.00%
+2025-01-30 18:06:33,713 [INFO] Alpha gradient: 0.0242
+2025-01-30 18:06:33,713 [INFO] Head gradient is None
+2025-01-30 18:06:43,246 [INFO] Task 3, Epoch 4: Loss = 10.3550, Acc = 0.00%
+2025-01-30 18:06:43,748 [INFO] Alpha gradient: 0.0098
+2025-01-30 18:06:43,749 [INFO] Head gradient is None
+2025-01-30 18:06:53,267 [INFO] Task 3, Epoch 5: Loss = 10.3884, Acc = 0.00%
+2025-01-30 18:06:53,768 [INFO] Alpha gradient: -0.0311
+2025-01-30 18:06:53,768 [INFO] Head gradient is None
+2025-01-30 18:07:03,289 [INFO] Task 3, Epoch 6: Loss = 10.3628, Acc = 0.00%
+2025-01-30 18:07:03,796 [INFO] Alpha gradient: 0.0177
+2025-01-30 18:07:03,796 [INFO] Head gradient is None
+2025-01-30 18:07:13,328 [INFO] Task 3, Epoch 7: Loss = 10.3919, Acc = 0.00%
+2025-01-30 18:07:13,835 [INFO] Alpha gradient: -0.0199
+2025-01-30 18:07:13,835 [INFO] Head gradient is None
+2025-01-30 18:07:23,366 [INFO] Task 3, Epoch 8: Loss = 10.3491, Acc = 0.00%
+2025-01-30 18:07:23,873 [INFO] Alpha gradient: -0.0143
+2025-01-30 18:07:23,873 [INFO] Head gradient is None
+2025-01-30 18:07:33,403 [INFO] Task 3, Epoch 9: Loss = 10.3575, Acc = 0.00%
+2025-01-30 18:07:33,904 [INFO] Alpha gradient: -0.0143
+2025-01-30 18:07:33,905 [INFO] Head gradient is None
+2025-01-30 18:07:43,425 [INFO] Task 3, Epoch 10: Loss = 10.3593, Acc = 0.00%
+2025-01-30 18:07:43,930 [INFO] Alpha gradient: -0.0311
+2025-01-30 18:07:43,931 [INFO] Head gradient is None
+2025-01-30 18:07:53,464 [INFO] Task 3, Epoch 11: Loss = 10.3566, Acc = 0.00%
+2025-01-30 18:07:53,966 [INFO] Alpha gradient: 0.0542
+2025-01-30 18:07:53,966 [INFO] Head gradient is None
+2025-01-30 18:08:03,488 [INFO] Task 3, Epoch 12: Loss = 10.3575, Acc = 0.00%
+2025-01-30 18:08:03,990 [INFO] Alpha gradient: -0.0170
+2025-01-30 18:08:03,990 [INFO] Head gradient is None
+2025-01-30 18:08:13,510 [INFO] Task 3, Epoch 13: Loss = 10.3800, Acc = 0.00%
+2025-01-30 18:08:14,012 [INFO] Alpha gradient: 0.0023
+2025-01-30 18:08:14,012 [INFO] Head gradient is None
+2025-01-30 18:08:23,536 [INFO] Task 3, Epoch 14: Loss = 10.3699, Acc = 0.00%
+2025-01-30 18:08:23,536 [INFO] Task 3 completed. Average loss: 10.3699
+2025-01-30 18:08:32,048 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:08:40,554 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:08:49,065 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:08:57,570 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 18:08:57,571 [INFO] 
+Starting task 4
+2025-01-30 18:08:58,072 [INFO] Alpha gradient: 0.0260
+2025-01-30 18:08:58,073 [INFO] Head gradient is None
+2025-01-30 18:09:07,602 [INFO] Task 4, Epoch 0: Loss = 9.9560, Acc = 0.00%
+2025-01-30 18:09:08,109 [INFO] Alpha gradient: -0.0085
+2025-01-30 18:09:08,109 [INFO] Head gradient is None
+2025-01-30 18:09:17,642 [INFO] Task 4, Epoch 1: Loss = 9.9493, Acc = 0.00%
+2025-01-30 18:09:18,147 [INFO] Alpha gradient: -0.0040
+2025-01-30 18:09:18,148 [INFO] Head gradient is None
+2025-01-30 18:09:27,679 [INFO] Task 4, Epoch 2: Loss = 9.9434, Acc = 0.00%
+2025-01-30 18:09:28,180 [INFO] Alpha gradient: -0.0141
+2025-01-30 18:09:28,181 [INFO] Head gradient is None
+2025-01-30 18:09:37,700 [INFO] Task 4, Epoch 3: Loss = 9.9860, Acc = 0.00%
+2025-01-30 18:09:38,207 [INFO] Alpha gradient: -0.0109
+2025-01-30 18:09:38,207 [INFO] Head gradient is None
+2025-01-30 18:09:47,745 [INFO] Task 4, Epoch 4: Loss = 9.9988, Acc = 0.00%
+2025-01-30 18:09:48,251 [INFO] Alpha gradient: -0.0104
+2025-01-30 18:09:48,251 [INFO] Head gradient is None
+2025-01-30 18:09:57,787 [INFO] Task 4, Epoch 5: Loss = 9.9861, Acc = 0.00%
+2025-01-30 18:09:58,294 [INFO] Alpha gradient: 0.0345
+2025-01-30 18:09:58,294 [INFO] Head gradient is None
+2025-01-30 18:10:07,826 [INFO] Task 4, Epoch 6: Loss = 9.9668, Acc = 0.00%
+2025-01-30 18:10:08,333 [INFO] Alpha gradient: -0.0422
+2025-01-30 18:10:08,333 [INFO] Head gradient is None
+2025-01-30 18:10:17,871 [INFO] Task 4, Epoch 7: Loss = 9.9461, Acc = 0.00%
+2025-01-30 18:10:18,377 [INFO] Alpha gradient: 0.0351
+2025-01-30 18:10:18,377 [INFO] Head gradient is None
+2025-01-30 18:10:27,906 [INFO] Task 4, Epoch 8: Loss = 10.0011, Acc = 0.00%
+2025-01-30 18:10:28,407 [INFO] Alpha gradient: 0.0031
+2025-01-30 18:10:28,407 [INFO] Head gradient is None
+2025-01-30 18:10:37,930 [INFO] Task 4, Epoch 9: Loss = 9.9648, Acc = 0.00%
+2025-01-30 18:10:38,430 [INFO] Alpha gradient: -0.0041
+2025-01-30 18:10:38,430 [INFO] Head gradient is None
+2025-01-30 18:10:47,955 [INFO] Task 4, Epoch 10: Loss = 9.9624, Acc = 0.00%
+2025-01-30 18:10:48,463 [INFO] Alpha gradient: 0.0304
+2025-01-30 18:10:48,463 [INFO] Head gradient is None
+2025-01-30 18:10:57,998 [INFO] Task 4, Epoch 11: Loss = 9.9662, Acc = 0.00%
+2025-01-30 18:10:58,504 [INFO] Alpha gradient: 0.0032
+2025-01-30 18:10:58,504 [INFO] Head gradient is None
+2025-01-30 18:11:08,031 [INFO] Task 4, Epoch 12: Loss = 9.9883, Acc = 0.00%
+2025-01-30 18:11:08,532 [INFO] Alpha gradient: 0.0180
+2025-01-30 18:11:08,532 [INFO] Head gradient is None
+2025-01-30 18:11:18,053 [INFO] Task 4, Epoch 13: Loss = 10.0006, Acc = 0.00%
+2025-01-30 18:11:18,554 [INFO] Alpha gradient: -0.0232
+2025-01-30 18:11:18,554 [INFO] Head gradient is None
+2025-01-30 18:11:28,074 [INFO] Task 4, Epoch 14: Loss = 9.9629, Acc = 0.00%
+2025-01-30 18:11:28,074 [INFO] Task 4 completed. Average loss: 9.9629
+2025-01-30 18:11:36,596 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:11:45,098 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:11:53,596 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:12:02,097 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 18:12:10,600 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 18:12:10,601 [INFO] 
+Starting task 5
+2025-01-30 18:12:11,103 [INFO] Alpha gradient: -0.0137
+2025-01-30 18:12:11,103 [INFO] Head gradient is None
+2025-01-30 18:12:20,629 [INFO] Task 5, Epoch 0: Loss = 10.8002, Acc = 0.00%
+2025-01-30 18:12:21,136 [INFO] Alpha gradient: 0.0426
+2025-01-30 18:12:21,136 [INFO] Head gradient is None
+2025-01-30 18:12:30,668 [INFO] Task 5, Epoch 1: Loss = 10.7944, Acc = 0.00%
+2025-01-30 18:12:31,169 [INFO] Alpha gradient: -0.0067
+2025-01-30 18:12:31,169 [INFO] Head gradient is None
+2025-01-30 18:12:40,690 [INFO] Task 5, Epoch 2: Loss = 10.7941, Acc = 0.00%
+2025-01-30 18:12:41,199 [INFO] Alpha gradient: 0.0116
+2025-01-30 18:12:41,199 [INFO] Head gradient is None
+2025-01-30 18:12:50,733 [INFO] Task 5, Epoch 3: Loss = 10.8161, Acc = 0.00%
+2025-01-30 18:12:51,240 [INFO] Alpha gradient: -0.0166
+2025-01-30 18:12:51,240 [INFO] Head gradient is None
+2025-01-30 18:13:00,776 [INFO] Task 5, Epoch 4: Loss = 10.7848, Acc = 0.00%
+2025-01-30 18:13:01,283 [INFO] Alpha gradient: -0.0001
+2025-01-30 18:13:01,283 [INFO] Head gradient is None
+2025-01-30 18:13:10,812 [INFO] Task 5, Epoch 5: Loss = 10.7653, Acc = 0.00%
+2025-01-30 18:13:11,319 [INFO] Alpha gradient: 0.0180
+2025-01-30 18:13:11,319 [INFO] Head gradient is None
+2025-01-30 18:13:20,853 [INFO] Task 5, Epoch 6: Loss = 10.8223, Acc = 0.00%
+2025-01-30 18:13:21,360 [INFO] Alpha gradient: 0.0270
+2025-01-30 18:13:21,360 [INFO] Head gradient is None
+2025-01-30 18:13:30,892 [INFO] Task 5, Epoch 7: Loss = 10.8218, Acc = 0.00%
+2025-01-30 18:13:31,392 [INFO] Alpha gradient: -0.0303
+2025-01-30 18:13:31,392 [INFO] Head gradient is None
+2025-01-30 18:13:40,913 [INFO] Task 5, Epoch 8: Loss = 10.7747, Acc = 0.00%
+2025-01-30 18:13:41,414 [INFO] Alpha gradient: 0.0142
+2025-01-30 18:13:41,414 [INFO] Head gradient is None
+2025-01-30 18:13:50,938 [INFO] Task 5, Epoch 9: Loss = 10.8252, Acc = 0.00%
+2025-01-30 18:13:51,444 [INFO] Alpha gradient: -0.0180
+2025-01-30 18:13:51,444 [INFO] Head gradient is None
+2025-01-30 18:14:00,978 [INFO] Task 5, Epoch 10: Loss = 10.7771, Acc = 0.00%
+2025-01-30 18:14:01,479 [INFO] Alpha gradient: 0.0115
+2025-01-30 18:14:01,479 [INFO] Head gradient is None
+2025-01-30 18:14:11,002 [INFO] Task 5, Epoch 11: Loss = 10.7550, Acc = 0.00%
+2025-01-30 18:14:11,502 [INFO] Alpha gradient: -0.0193
+2025-01-30 18:14:11,502 [INFO] Head gradient is None
+2025-01-30 18:14:21,029 [INFO] Task 5, Epoch 12: Loss = 10.7791, Acc = 0.00%
+2025-01-30 18:14:21,536 [INFO] Alpha gradient: -0.0062
+2025-01-30 18:14:21,536 [INFO] Head gradient is None
+2025-01-30 18:14:31,063 [INFO] Task 5, Epoch 13: Loss = 10.7922, Acc = 0.00%
+2025-01-30 18:14:31,564 [INFO] Alpha gradient: 0.0051
+2025-01-30 18:14:31,564 [INFO] Head gradient is None
+2025-01-30 18:14:41,082 [INFO] Task 5, Epoch 14: Loss = 10.7755, Acc = 0.00%
+2025-01-30 18:14:41,082 [INFO] Task 5 completed. Average loss: 10.7755
+2025-01-30 18:14:49,598 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:14:58,099 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:15:06,600 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:15:15,097 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 18:15:23,585 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 18:15:32,074 [INFO] Accuracy on task 5: 0.00%
+2025-01-30 18:15:32,074 [INFO] 
+Starting task 6
+2025-01-30 18:15:32,575 [INFO] Alpha gradient: -0.0041
+2025-01-30 18:15:32,575 [INFO] Head gradient is None
+2025-01-30 18:15:42,091 [INFO] Task 6, Epoch 0: Loss = 9.6129, Acc = 0.00%
+2025-01-30 18:15:42,591 [INFO] Alpha gradient: 0.0114
+2025-01-30 18:15:42,591 [INFO] Head gradient is None
+2025-01-30 18:15:52,105 [INFO] Task 6, Epoch 1: Loss = 9.5972, Acc = 0.00%
+2025-01-30 18:15:52,611 [INFO] Alpha gradient: 0.0082
+2025-01-30 18:15:52,611 [INFO] Head gradient is None
+2025-01-30 18:16:02,144 [INFO] Task 6, Epoch 2: Loss = 9.5894, Acc = 0.00%
+2025-01-30 18:16:02,650 [INFO] Alpha gradient: 0.0187
+2025-01-30 18:16:02,650 [INFO] Head gradient is None
+2025-01-30 18:16:12,182 [INFO] Task 6, Epoch 3: Loss = 9.5790, Acc = 0.00%
+2025-01-30 18:16:12,684 [INFO] Alpha gradient: 0.0153
+2025-01-30 18:16:12,684 [INFO] Head gradient is None
+2025-01-30 18:16:22,201 [INFO] Task 6, Epoch 4: Loss = 9.5884, Acc = 0.00%
+2025-01-30 18:16:22,702 [INFO] Alpha gradient: -0.0276
+2025-01-30 18:16:22,702 [INFO] Head gradient is None
+2025-01-30 18:16:32,214 [INFO] Task 6, Epoch 5: Loss = 9.5826, Acc = 0.00%
+2025-01-30 18:16:32,714 [INFO] Alpha gradient: 0.0142
+2025-01-30 18:16:32,714 [INFO] Head gradient is None
+2025-01-30 18:16:42,234 [INFO] Task 6, Epoch 6: Loss = 9.5959, Acc = 0.00%
+2025-01-30 18:16:42,740 [INFO] Alpha gradient: -0.0147
+2025-01-30 18:16:42,740 [INFO] Head gradient is None
+2025-01-30 18:16:52,273 [INFO] Task 6, Epoch 7: Loss = 9.5733, Acc = 0.00%
+2025-01-30 18:16:52,780 [INFO] Alpha gradient: -0.0031
+2025-01-30 18:16:52,780 [INFO] Head gradient is None
+2025-01-30 18:17:02,310 [INFO] Task 6, Epoch 8: Loss = 9.6055, Acc = 0.00%
+2025-01-30 18:17:02,811 [INFO] Alpha gradient: 0.0119
+2025-01-30 18:17:02,811 [INFO] Head gradient is None
+2025-01-30 18:17:12,332 [INFO] Task 6, Epoch 9: Loss = 9.6099, Acc = 0.00%
+2025-01-30 18:17:12,838 [INFO] Alpha gradient: -0.0163
+2025-01-30 18:17:12,838 [INFO] Head gradient is None
+2025-01-30 18:17:22,372 [INFO] Task 6, Epoch 10: Loss = 9.5713, Acc = 0.00%
+2025-01-30 18:17:22,873 [INFO] Alpha gradient: -0.0049
+2025-01-30 18:17:22,873 [INFO] Head gradient is None
+2025-01-30 18:17:32,395 [INFO] Task 6, Epoch 11: Loss = 9.6072, Acc = 0.00%
+2025-01-30 18:17:32,896 [INFO] Alpha gradient: -0.0020
+2025-01-30 18:17:32,896 [INFO] Head gradient is None
+2025-01-30 18:17:42,417 [INFO] Task 6, Epoch 12: Loss = 9.5985, Acc = 0.00%
+2025-01-30 18:17:42,918 [INFO] Alpha gradient: -0.0064
+2025-01-30 18:17:42,918 [INFO] Head gradient is None
+2025-01-30 18:17:52,443 [INFO] Task 6, Epoch 13: Loss = 9.5944, Acc = 0.00%
+2025-01-30 18:17:52,950 [INFO] Alpha gradient: 0.0330
+2025-01-30 18:17:52,950 [INFO] Head gradient is None
+2025-01-30 18:18:02,484 [INFO] Task 6, Epoch 14: Loss = 9.5960, Acc = 0.00%
+2025-01-30 18:18:02,484 [INFO] Task 6 completed. Average loss: 9.5960
+2025-01-30 18:18:10,997 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:18:19,498 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:18:27,998 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:18:36,501 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 18:18:45,004 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 18:18:53,518 [INFO] Accuracy on task 5: 0.00%
+2025-01-30 18:19:02,020 [INFO] Accuracy on task 6: 0.00%
+2025-01-30 18:19:02,020 [INFO] 
+Starting task 7
+2025-01-30 18:19:02,522 [INFO] Alpha gradient: -0.0306
+2025-01-30 18:19:02,522 [INFO] Head gradient is None
+2025-01-30 18:19:12,058 [INFO] Task 7, Epoch 0: Loss = 11.8823, Acc = 0.00%
+2025-01-30 18:19:12,566 [INFO] Alpha gradient: 0.0216
+2025-01-30 18:19:12,567 [INFO] Head gradient is None
+2025-01-30 18:19:22,111 [INFO] Task 7, Epoch 1: Loss = 11.8916, Acc = 0.00%
+2025-01-30 18:19:22,618 [INFO] Alpha gradient: -0.0230
+2025-01-30 18:19:22,619 [INFO] Head gradient is None
+2025-01-30 18:19:32,159 [INFO] Task 7, Epoch 2: Loss = 11.8709, Acc = 0.00%
+2025-01-30 18:19:32,667 [INFO] Alpha gradient: -0.0073
+2025-01-30 18:19:32,667 [INFO] Head gradient is None
+2025-01-30 18:19:42,213 [INFO] Task 7, Epoch 3: Loss = 11.8987, Acc = 0.00%
+2025-01-30 18:19:42,720 [INFO] Alpha gradient: -0.0022
+2025-01-30 18:19:42,720 [INFO] Head gradient is None
+2025-01-30 18:19:52,264 [INFO] Task 7, Epoch 4: Loss = 11.9204, Acc = 0.00%
+2025-01-30 18:19:52,765 [INFO] Alpha gradient: -0.0361
+2025-01-30 18:19:52,765 [INFO] Head gradient is None
+2025-01-30 18:20:02,296 [INFO] Task 7, Epoch 5: Loss = 11.9020, Acc = 0.00%
+2025-01-30 18:20:02,798 [INFO] Alpha gradient: -0.0031
+2025-01-30 18:20:02,798 [INFO] Head gradient is None
+2025-01-30 18:20:12,325 [INFO] Task 7, Epoch 6: Loss = 11.9289, Acc = 0.00%
+2025-01-30 18:20:12,826 [INFO] Alpha gradient: 0.0072
+2025-01-30 18:20:12,826 [INFO] Head gradient is None
+2025-01-30 18:20:22,346 [INFO] Task 7, Epoch 7: Loss = 11.8879, Acc = 0.00%
+2025-01-30 18:20:22,847 [INFO] Alpha gradient: 0.0167
+2025-01-30 18:20:22,847 [INFO] Head gradient is None
+2025-01-30 18:20:32,370 [INFO] Task 7, Epoch 8: Loss = 11.9013, Acc = 0.00%
+2025-01-30 18:20:32,878 [INFO] Alpha gradient: -0.0276
+2025-01-30 18:20:32,878 [INFO] Head gradient is None
+2025-01-30 18:20:42,419 [INFO] Task 7, Epoch 9: Loss = 11.9204, Acc = 0.00%
+2025-01-30 18:20:42,921 [INFO] Alpha gradient: -0.0027
+2025-01-30 18:20:42,921 [INFO] Head gradient is None
+2025-01-30 18:20:52,451 [INFO] Task 7, Epoch 10: Loss = 11.9004, Acc = 0.00%
+2025-01-30 18:20:52,963 [INFO] Alpha gradient: 0.0111
+2025-01-30 18:20:52,963 [INFO] Head gradient is None
+2025-01-30 18:21:02,513 [INFO] Task 7, Epoch 11: Loss = 11.8899, Acc = 0.00%
+2025-01-30 18:21:03,022 [INFO] Alpha gradient: -0.0165
+2025-01-30 18:21:03,022 [INFO] Head gradient is None
+2025-01-30 18:21:12,569 [INFO] Task 7, Epoch 12: Loss = 11.9142, Acc = 0.00%
+2025-01-30 18:21:13,078 [INFO] Alpha gradient: -0.0095
+2025-01-30 18:21:13,078 [INFO] Head gradient is None
+2025-01-30 18:21:22,624 [INFO] Task 7, Epoch 13: Loss = 11.8878, Acc = 0.00%
+2025-01-30 18:21:23,131 [INFO] Alpha gradient: 0.0245
+2025-01-30 18:21:23,131 [INFO] Head gradient is None
+2025-01-30 18:21:32,676 [INFO] Task 7, Epoch 14: Loss = 11.9257, Acc = 0.00%
+2025-01-30 18:21:32,676 [INFO] Task 7 completed. Average loss: 11.9257
+2025-01-30 18:21:41,197 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:21:49,710 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:21:58,223 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:22:06,736 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 18:22:15,252 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 18:22:23,768 [INFO] Accuracy on task 5: 0.00%
+2025-01-30 18:22:32,291 [INFO] Accuracy on task 6: 0.00%
+2025-01-30 18:22:40,809 [INFO] Accuracy on task 7: 0.00%
+2025-01-30 18:22:40,809 [INFO] 
+Starting task 8
+2025-01-30 18:22:41,312 [INFO] Alpha gradient: 0.0015
+2025-01-30 18:22:41,312 [INFO] Head gradient is None
+2025-01-30 18:22:50,848 [INFO] Task 8, Epoch 0: Loss = 9.6489, Acc = 0.00%
+2025-01-30 18:22:51,349 [INFO] Alpha gradient: -0.0044
+2025-01-30 18:22:51,349 [INFO] Head gradient is None
+2025-01-30 18:23:00,890 [INFO] Task 8, Epoch 1: Loss = 9.6204, Acc = 0.00%
+2025-01-30 18:23:01,392 [INFO] Alpha gradient: 0.0173
+2025-01-30 18:23:01,392 [INFO] Head gradient is None
+2025-01-30 18:23:10,926 [INFO] Task 8, Epoch 2: Loss = 9.6416, Acc = 0.00%
+2025-01-30 18:23:11,428 [INFO] Alpha gradient: 0.0043
+2025-01-30 18:23:11,428 [INFO] Head gradient is None
+2025-01-30 18:23:20,962 [INFO] Task 8, Epoch 3: Loss = 9.6292, Acc = 0.00%
+2025-01-30 18:23:21,464 [INFO] Alpha gradient: -0.0056
+2025-01-30 18:23:21,464 [INFO] Head gradient is None
+2025-01-30 18:23:31,002 [INFO] Task 8, Epoch 4: Loss = 9.6317, Acc = 0.00%
+2025-01-30 18:23:31,504 [INFO] Alpha gradient: 0.0154
+2025-01-30 18:23:31,504 [INFO] Head gradient is None
+2025-01-30 18:23:41,041 [INFO] Task 8, Epoch 5: Loss = 9.6459, Acc = 0.00%
+2025-01-30 18:23:41,542 [INFO] Alpha gradient: 0.0266
+2025-01-30 18:23:41,542 [INFO] Head gradient is None
+2025-01-30 18:23:51,080 [INFO] Task 8, Epoch 6: Loss = 9.6508, Acc = 0.00%
+2025-01-30 18:23:51,581 [INFO] Alpha gradient: -0.0211
+2025-01-30 18:23:51,582 [INFO] Head gradient is None
+2025-01-30 18:24:01,115 [INFO] Task 8, Epoch 7: Loss = 9.6083, Acc = 0.00%
+2025-01-30 18:24:01,616 [INFO] Alpha gradient: -0.0247
+2025-01-30 18:24:01,616 [INFO] Head gradient is None
+2025-01-30 18:24:11,151 [INFO] Task 8, Epoch 8: Loss = 9.6175, Acc = 0.00%
+2025-01-30 18:24:11,652 [INFO] Alpha gradient: -0.0058
+2025-01-30 18:24:11,652 [INFO] Head gradient is None
+2025-01-30 18:24:21,184 [INFO] Task 8, Epoch 9: Loss = 9.6318, Acc = 0.00%
+2025-01-30 18:24:21,686 [INFO] Alpha gradient: -0.0350
+2025-01-30 18:24:21,686 [INFO] Head gradient is None
+2025-01-30 18:24:31,224 [INFO] Task 8, Epoch 10: Loss = 9.5884, Acc = 0.00%
+2025-01-30 18:24:31,725 [INFO] Alpha gradient: 0.0065
+2025-01-30 18:24:31,726 [INFO] Head gradient is None
+2025-01-30 18:24:41,261 [INFO] Task 8, Epoch 11: Loss = 9.6402, Acc = 0.00%
+2025-01-30 18:24:41,763 [INFO] Alpha gradient: -0.0091
+2025-01-30 18:24:41,763 [INFO] Head gradient is None
+2025-01-30 18:24:51,300 [INFO] Task 8, Epoch 12: Loss = 9.6162, Acc = 0.00%
+2025-01-30 18:24:51,802 [INFO] Alpha gradient: 0.0290
+2025-01-30 18:24:51,802 [INFO] Head gradient is None
+2025-01-30 18:25:01,338 [INFO] Task 8, Epoch 13: Loss = 9.6100, Acc = 0.00%
+2025-01-30 18:25:01,839 [INFO] Alpha gradient: -0.0119
+2025-01-30 18:25:01,839 [INFO] Head gradient is None
+2025-01-30 18:25:11,376 [INFO] Task 8, Epoch 14: Loss = 9.6384, Acc = 0.00%
+2025-01-30 18:25:11,376 [INFO] Task 8 completed. Average loss: 9.6384
+2025-01-30 18:25:19,909 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:25:28,427 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:25:36,943 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:25:45,458 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 18:25:53,980 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 18:26:02,498 [INFO] Accuracy on task 5: 0.00%
+2025-01-30 18:26:11,018 [INFO] Accuracy on task 6: 0.00%
+2025-01-30 18:26:19,534 [INFO] Accuracy on task 7: 0.00%
+2025-01-30 18:26:28,050 [INFO] Accuracy on task 8: 0.00%
+2025-01-30 18:26:28,050 [INFO] 
+Starting task 9
+2025-01-30 18:26:28,553 [INFO] Alpha gradient: 0.0041
+2025-01-30 18:26:28,553 [INFO] Head gradient is None
+2025-01-30 18:26:38,088 [INFO] Task 9, Epoch 0: Loss = 10.8652, Acc = 0.00%
+2025-01-30 18:26:38,590 [INFO] Alpha gradient: 0.0478
+2025-01-30 18:26:38,590 [INFO] Head gradient is None
+2025-01-30 18:26:48,132 [INFO] Task 9, Epoch 1: Loss = 10.8596, Acc = 0.00%
+2025-01-30 18:26:48,639 [INFO] Alpha gradient: -0.0284
+2025-01-30 18:26:48,640 [INFO] Head gradient is None
+2025-01-30 18:26:58,193 [INFO] Task 9, Epoch 2: Loss = 10.8760, Acc = 0.00%
+2025-01-30 18:26:58,703 [INFO] Alpha gradient: -0.0036
+2025-01-30 18:26:58,703 [INFO] Head gradient is None
+2025-01-30 18:27:08,250 [INFO] Task 9, Epoch 3: Loss = 10.8570, Acc = 0.00%
+2025-01-30 18:27:08,761 [INFO] Alpha gradient: 0.0178
+2025-01-30 18:27:08,761 [INFO] Head gradient is None
+2025-01-30 18:27:18,312 [INFO] Task 9, Epoch 4: Loss = 10.8779, Acc = 0.00%
+2025-01-30 18:27:18,820 [INFO] Alpha gradient: 0.0605
+2025-01-30 18:27:18,820 [INFO] Head gradient is None
+2025-01-30 18:27:28,395 [INFO] Task 9, Epoch 5: Loss = 10.8647, Acc = 0.00%
+2025-01-30 18:27:28,898 [INFO] Alpha gradient: -0.0010
+2025-01-30 18:27:28,898 [INFO] Head gradient is None
+2025-01-30 18:27:38,466 [INFO] Task 9, Epoch 6: Loss = 10.8693, Acc = 0.00%
+2025-01-30 18:27:38,981 [INFO] Alpha gradient: 0.0032
+2025-01-30 18:27:38,981 [INFO] Head gradient is None
+2025-01-30 18:27:48,560 [INFO] Task 9, Epoch 7: Loss = 10.8924, Acc = 0.00%
+2025-01-30 18:27:49,064 [INFO] Alpha gradient: -0.0093
+2025-01-30 18:27:49,064 [INFO] Head gradient is None
+2025-01-30 18:27:58,628 [INFO] Task 9, Epoch 8: Loss = 10.8777, Acc = 0.00%
+2025-01-30 18:27:59,131 [INFO] Alpha gradient: -0.0035
+2025-01-30 18:27:59,131 [INFO] Head gradient is None
+2025-01-30 18:28:08,693 [INFO] Task 9, Epoch 9: Loss = 10.8539, Acc = 0.00%
+2025-01-30 18:28:09,196 [INFO] Alpha gradient: -0.0374
+2025-01-30 18:28:09,196 [INFO] Head gradient is None
+2025-01-30 18:28:18,762 [INFO] Task 9, Epoch 10: Loss = 10.8764, Acc = 0.00%
+2025-01-30 18:28:19,271 [INFO] Alpha gradient: -0.0251
+2025-01-30 18:28:19,271 [INFO] Head gradient is None
+2025-01-30 18:28:28,861 [INFO] Task 9, Epoch 11: Loss = 10.8656, Acc = 0.00%
+2025-01-30 18:28:29,364 [INFO] Alpha gradient: -0.0087
+2025-01-30 18:28:29,364 [INFO] Head gradient is None
+2025-01-30 18:28:38,943 [INFO] Task 9, Epoch 12: Loss = 10.9125, Acc = 0.00%
+2025-01-30 18:28:39,447 [INFO] Alpha gradient: -0.0020
+2025-01-30 18:28:39,447 [INFO] Head gradient is None
+2025-01-30 18:28:49,026 [INFO] Task 9, Epoch 13: Loss = 10.8797, Acc = 0.00%
+2025-01-30 18:28:49,530 [INFO] Alpha gradient: 0.0374
+2025-01-30 18:28:49,531 [INFO] Head gradient is None
+2025-01-30 18:28:59,115 [INFO] Task 9, Epoch 14: Loss = 10.8548, Acc = 0.00%
+2025-01-30 18:28:59,115 [INFO] Task 9 completed. Average loss: 10.8548
+2025-01-30 18:29:07,686 [INFO] Accuracy on task 0: 100.00%
+2025-01-30 18:29:16,246 [INFO] Accuracy on task 1: 0.00%
+2025-01-30 18:29:24,797 [INFO] Accuracy on task 2: 0.00%
+2025-01-30 18:29:33,346 [INFO] Accuracy on task 3: 0.00%
+2025-01-30 18:29:41,907 [INFO] Accuracy on task 4: 0.00%
+2025-01-30 18:29:50,466 [INFO] Accuracy on task 5: 0.00%
+2025-01-30 18:29:59,029 [INFO] Accuracy on task 6: 0.00%
+2025-01-30 18:30:07,575 [INFO] Accuracy on task 7: 0.00%
+2025-01-30 18:30:16,123 [INFO] Accuracy on task 8: 0.00%
+2025-01-30 18:30:24,673 [INFO] Accuracy on task 9: 0.00%

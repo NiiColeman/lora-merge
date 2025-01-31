@@ -1,0 +1,19 @@
+2025-01-30 17:39:06,824 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg2_in21k_ft_in1k)
+2025-01-30 17:39:06,838 [INFO] [timm/vit_base_patch16_224.augreg2_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-01-30 17:39:11,657 [INFO] 
+Starting task 0
+2025-01-30 17:39:21,879 [INFO] Task 0, Epoch 0: Loss = 4.0254, Acc = 11.00%
+2025-01-30 17:39:29,436 [INFO] Task 0, Epoch 1: Loss = 1.1018, Acc = 64.10%
+2025-01-30 17:39:37,033 [INFO] Task 0, Epoch 2: Loss = 0.2667, Acc = 94.00%
+2025-01-30 17:39:44,625 [INFO] Task 0, Epoch 3: Loss = 0.0932, Acc = 98.30%
+2025-01-30 17:39:52,222 [INFO] Task 0, Epoch 4: Loss = 0.0392, Acc = 99.60%
+2025-01-30 17:39:59,824 [INFO] Task 0, Epoch 5: Loss = 0.0202, Acc = 100.00%
+2025-01-30 17:40:07,421 [INFO] Task 0, Epoch 6: Loss = 0.0119, Acc = 100.00%
+2025-01-30 17:40:15,008 [INFO] Task 0, Epoch 7: Loss = 0.0082, Acc = 100.00%
+2025-01-30 17:40:22,626 [INFO] Task 0, Epoch 8: Loss = 0.0053, Acc = 100.00%
+2025-01-30 17:40:30,240 [INFO] Task 0, Epoch 9: Loss = 0.0040, Acc = 100.00%
+2025-01-30 17:40:37,858 [INFO] Task 0, Epoch 10: Loss = 0.0032, Acc = 100.00%
+2025-01-30 17:40:45,489 [INFO] Task 0, Epoch 11: Loss = 0.0026, Acc = 100.00%
+2025-01-30 17:40:53,094 [INFO] Task 0, Epoch 12: Loss = 0.0023, Acc = 100.00%
+2025-01-30 17:41:00,705 [INFO] Task 0, Epoch 13: Loss = 0.0020, Acc = 100.00%
+2025-01-30 17:41:08,522 [INFO] Task 0, Epoch 14: Loss = 0.0017, Acc = 100.00%

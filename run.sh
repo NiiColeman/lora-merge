@@ -19,6 +19,6 @@ source /leonardo_scratch/fast/IscrC_FoundCL/cl/lowrank/bin/activate
 export CUDA_LAUNCH_BLOCKING=1
 
 
-python s-dora01.py
+python s-dora.py
 
 
